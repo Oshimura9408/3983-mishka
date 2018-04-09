@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maxim94](https://up.htmlacademy.ru/adaptive/14/user/3983).
-* Наставник: `Неизвестно`.
+* Наставник: [Сэр Роберт Томпсон](https://htmlacademy.ru/profile/id42701).
 
 ---
 
