@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maxim94](https://up.htmlacademy.ru/adaptive/14/user/3983).
-* Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
+* Наставник: [Сэр Роберт Томпсон](https://htmlacademy.ru/profile/id42701).
 
 ---
 
