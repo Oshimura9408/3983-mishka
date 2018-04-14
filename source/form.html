@@ -10,7 +10,7 @@
         <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Мишка">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"> Аккордеон </button>
+        <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--active ">
@@ -30,105 +30,89 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__title">
-        <h1 class="page-main__title-text">Вязание на заказ</h1>
-      </div>
+      <h1 class="page-main__title-text">Вязание на заказ</h1>
+      <p class="page-main__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
 
       <form class="main-form" action="#" method="post">
-        <p class="main-form__description">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-        </p>
-
-        <div class="form-item form-item--type">
+        <div class="main-form__radio">
           <p class="form-item__title form-item__title-type">Тип</p>
-          <ul class="form__filter">
-            <li class="form__filter-item form-item__filter-item--type">
-              <input type="radio" id="radio-type1">
-              <label class="form__filter-radio" for="radio-type1">Аксессуар для интерьера</label>
-            </li>
-            <li class="form__filter-item form-item__filter-item--type">
-              <input type="radio" id="radio-type2">
-              <label class="form__filter-radio" for="radio-type2">Детская игрушка</label>
-            </li>
-          </ul>
+          <label class="radio__label" >
+            Аксессуар для интерьера
+            <input type="radio" class="radio__input">
+          </label>
+          <label class="radio__label" >
+            Детская игрушка
+            <input type="radio" class="radio__input">
+          </label>
         </div>
 
-        <div class="form-item form-item--color">
+        <div class="main-form__checkbox">
           <p class="form-item__title form-item__title-color">Цвет</p>
-          <ul class="form__filter">
-            <li class="form__filter form-item__filter-item--color">
-              <input type="checkbox" id="checkbox-color1">
-              <label class="form__filter-checkbox" for="checkbox-color1">Белый</label>
-            </li>
-            <li class="form__filter form-item__filter-item--color">
-              <input type="checkbox" id="checkbox-color2">
-              <label class="form__filter-checkbox" for="checkbox-color2">Серый</label>
-            </li>
-            <li class="form__filter form-item__filter-item--color">
-              <input type="checkbox" id="checkbox-color3">
-              <label class="form__filter-checkbox" for="checkbox-color3">Тиффани</label>
-            </li>
-            <li class="form__filter form-item__filter-item--color">
-              <input type="checkbox" id="checkbox-color4">
-              <label class="form__filter-checkbox" for="checkbox-color4">Черный</label>
-            </li>
-            <li class="form__filter form-item__filter-item--color">
-              <input type="checkbox" id="checkbox-color5">
-              <label class="form__filter-checkbox" for="checkbox-color5">Розовый</label>
-            </li>
-            <li class="form__filter form-item__filter-item--color">
-              <input type="checkbox" id="checkbox-color6">
-              <label class="form__filter-checkbox" for="checkbox-color6">Оранжевый</label>
-            </li>
-          </ul>
+          <label class="checkbox__label">
+            Белый
+            <input type="checkbox" class="checkbox__input">
+          </label>
+          <label class="checkbox__label">
+            Серый
+            <input type="checkbox" class="checkbox__input">
+          </label>
+          <label class="checkbox__label">
+            Тиффани
+            <input type="checkbox" class="checkbox__input">
+          </label>
+          <label class="checkbox__label">
+            Черный
+            <input type="checkbox" class="checkbox__input">
+          </label>
+          <label class="checkbox__label">
+            Розовый
+            <input type="checkbox" class="checkbox__input">
+          </label>
+          <label class="checkbox__label">
+            Оранжевый
+            <input type="checkbox" class="checkbox__input">
+          </label>
         </div >
 
-        <div class="form-item form-item--name">
-          <p class="form-item__title form-item__title-name">ФИО</p>
-          <ul class="form__filter">
-            <li class="form__filter form-item__filter-item--name">
-              <label class="form__filter-first-name" for="first-name">Имя:</label>
-              <input type="text" id="first-name" placeholder="Введите ваше имя*"/>
-            </li>
-            <li class="form__filter form-item__filter-item--name">
-              <label class="form__filter-last-name" for="last-name">Фамилия:</label>
-              <input type="text" id="last-name" placeholder="Укажите фамилию*"/>
-            </li>
-            <li class="form__filter form-item__filter-item--name">
-              <label class="form__filter-patronymic-name" for="patronymic-name">Отчество:</label>
-              <input type="text" id="patronymic-name" placeholder="Отчество, если желаете"/>
-            </li>
-          </ul>
+        <div class="main-form__user-info">
+          <p class="form-item__title form-item__title-user-info">ФИО</p>
+          <label class="user-info__label-name">
+            Имя:
+            <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
+          </label>
+          <label class="user-info__label-last-name">
+            Фамилия:
+            <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
+          </label>
+          <label class="user-info__label-patronymic">
+            Отчество:
+            <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
+          </label>
         </div>
 
-        <div class="form-item form-item--contacts">
-          <div class="form-item__phone">
-            <p class="form-item__title form-item__title-phone">Тел</p>
-            <ul class="form__filter">
-              <li class="form__filter-item form__filter-phone">
-                <input type="tel" placeholder="+7 XXX XX XX*">
-                <img src="#" alt="phone">
-              </li>
-            </ul>
-          </div>
-          <div class="form-item__mail">
-            <p class="form-item__title form-item__title-mail">e-mail</p>
-            <ul class="form__filter">
-              <li class="form__filter-item form__filter-mail">
-                <input type="email" placeholder="Ваш Email*">
-                <img src="#" alt="mail">
-              </li>
-            </ul>
-          </div>
+        <div class="main-form__phone">
+          <p class="form-item__title form-item__title-phone">Тел</p>
+          <label class="phone__label">
+            <input type="tel" class="phone__input" placeholder="+7 XXX XX XX*">
+          </label>
+
         </div>
 
-        <div class="form-item form-item--message">
-          <p class="form-item__title form-item__title-message">ДОП</p>
-          <ul class="form__filter">
-            <li class="form__filter-item form__filter-text">
-              <textarea id="text" name="text" cols="" rows="" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </li>
-          </ul>
+        <div class="main-form__mail">
+          <p class="form-item__title form-item__title-mail">e-mail</p>
+          <label class="mail__label">
+            <input type="email" class="mail__input" placeholder="Ваш Email*">
+          </label>
+        </div>
+
+        <div class="main-form__wishes">
+          <p class="form-item__title form-item__title-wishes">ДОП</p>
+          <label class="wishes__label">
+            <textarea class="wishes__textarea" name="text" cols="" rows="" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+          <smal class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</smal>
           <button type="submit" class="form__button button">ОТПРАВИТЬ ЗАКАЗ</button>
         </div>
       </form>

@@ -10,7 +10,7 @@
         <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Мишка">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"> Аккордеон </button>
+        <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--active ">
@@ -41,24 +41,30 @@
           <img src="http://placehold.it/260x195" class="catalog-items__img" alt="Зайчик попрыгайчик">
           <h1 class="catalog-items__title">Зайчик попрыгайчик</h1>
           <p class="catalog-items__description">Рост 30 см, вес 200 г</p>
-          <p class="catalog-items__price">1 200 руб.</p>
-          <a href="#" class="catalog-basket"> <img src="#"> </a>
+          <div class="catalog-items__buy">
+            <p class="catalog-items__price">1 200 руб.</p>
+            <a href="#" class="catalog-basket"> <img src="#"> </a>
+          </div>
         </article>
 
         <article class="catalog-items__item">
           <img src="http://placehold.it/260x195" class="catalog-items__img" alt="Корзинка для белья">
           <h1 class="catalog-items__title">Корзинка для белья</h1>
           <p class="catalog-items__description">Диаметр 15 см, высота 10 см</p>
-          <p class="catalog-items__price">690 руб.</p>
-          <a href="#" class="catalog-basket"> <img src="#"> </a>
+          <div class="catalog-items__buy">
+            <p class="catalog-items__price">690 руб.</p>
+            <a href="#" class="catalog-basket"> <img src="#"> </a>
+          </div>
         </article>
 
         <article class="catalog-items__item">
           <img src="http://placehold.it/260x195" class="catalog-items__img" alt="Большая корзинка для игрушек">
           <h1 class="catalog-items__title">Большая корзинка для игрушек</h1>
           <p class="catalog-items__description">Диаметр 30 см, высота 30 см</p>
-          <p class="catalog-items__price">1 500 руб.</p>
-          <a href="#" class="catalog-basket"> <img src="#"> </a>
+          <div class="catalog-items__buy">
+            <p class="catalog-items__price">1 500 руб.</p>
+            <a href="#" class="catalog-basket"> <img src="#"> </a>
+          </div>
         </article>
       </section>
 
@@ -87,7 +93,7 @@
         <label class="modal-window__item">
           <input type="radio" class="modal-window__item-l">L
         </label>
-        <button type="submit" class="window-modal__button-add">Добавить</button>
+        <button type="submit" class="window-modal__button-add button">Добавить</button>
       </form>
     </section>
 
