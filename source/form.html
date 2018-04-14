@@ -30,90 +30,93 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title-text">Вязание на заказ</h1>
+      <h1 class="page-main__title">Вязание на заказ</h1>
       <p class="page-main__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
-      <form class="main-form" action="#" method="post">
-        <div class="main-form__radio">
+      <form class="form" action="#" method="post">
+
+        <div class="form-item form-item__radio">
           <p class="form-item__title form-item__title-type">Тип</p>
-          <label class="radio__label" >
-            Аксессуар для интерьера
+          <div class="radio">
             <input type="radio" class="radio__input">
-          </label>
-          <label class="radio__label" >
-            Детская игрушка
+            <label class="radio__label" >
+              Аксессуар для интерьера
+            </label>
             <input type="radio" class="radio__input">
-          </label>
+            <label class="radio__label" >
+              Детская игрушка
+            </label>
+          </div>
         </div>
 
-        <div class="main-form__checkbox">
+        <div class="form-item form-item__checkbox">
           <p class="form-item__title form-item__title-color">Цвет</p>
-          <label class="checkbox__label">
-            Белый
+          <div class="checkbox">
             <input type="checkbox" class="checkbox__input">
-          </label>
-          <label class="checkbox__label">
-            Серый
+            <label class="checkbox__label">
+              Белый
+            </label>
             <input type="checkbox" class="checkbox__input">
-          </label>
-          <label class="checkbox__label">
-            Тиффани
+            <label class="checkbox__label">
+              Серый
+            </label>
             <input type="checkbox" class="checkbox__input">
-          </label>
-          <label class="checkbox__label">
-            Черный
+            <label class="checkbox__label">
+              Тиффани
+            </label>
             <input type="checkbox" class="checkbox__input">
-          </label>
-          <label class="checkbox__label">
-            Розовый
+            <label class="checkbox__label">
+              Черный
+            </label>
             <input type="checkbox" class="checkbox__input">
-          </label>
-          <label class="checkbox__label">
-            Оранжевый
+            <label class="checkbox__label">
+              Розовый
+            </label>
             <input type="checkbox" class="checkbox__input">
-          </label>
+            <label class="checkbox__label">
+              Оранжевый
+            </label>
+          </div>
         </div >
 
-        <div class="main-form__user-info">
+        <div class="form-item form-item__user-info">
           <p class="form-item__title form-item__title-user-info">ФИО</p>
+          <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
           <label class="user-info__label-name">
             Имя:
-            <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
           </label>
+          <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
           <label class="user-info__label-last-name">
             Фамилия:
-            <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
           </label>
+          <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
           <label class="user-info__label-patronymic">
             Отчество:
-            <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
           </label>
         </div>
 
-        <div class="main-form__phone">
-          <p class="form-item__title form-item__title-phone">Тел</p>
+        <div class="form-item form-item__phone">
+          <p class="form-item__title form-item__title--phone">Тел</p>
+          <input type="tel" class="phone__input" placeholder="+7 XXX XX XX*">
           <label class="phone__label">
-            <input type="tel" class="phone__input" placeholder="+7 XXX XX XX*">
           </label>
 
         </div>
 
-        <div class="main-form__mail">
-          <p class="form-item__title form-item__title-mail">e-mail</p>
+        <div class="form-item form-item__mail">
+          <p class="form-item__title form-item__title--mail">e-mail</p>
+          <input type="email" class="mail__input" placeholder="Ваш Email*">
           <label class="mail__label">
-            <input type="email" class="mail__input" placeholder="Ваш Email*">
           </label>
         </div>
 
-        <div class="main-form__wishes">
-          <p class="form-item__title form-item__title-wishes">ДОП</p>
-          <label class="wishes__label">
-            <textarea class="wishes__textarea" name="text" cols="" rows="" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </label>
-          <smal class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</smal>
-          <button type="submit" class="form__button button">ОТПРАВИТЬ ЗАКАЗ</button>
+        <div class="form-item form-item__wishes">
+          <p class="form-item__title form-item__title--wishes">Доп</p>
+          <textarea class="wishes__textarea" name="text" cols="" rows="" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <small class="main-form__legend"><sup>*</sup>Поля обязательные для заполнения</small>
+          <button type="submit" class="form__button button">Отправить заказ</button>
         </div>
       </form>
 
