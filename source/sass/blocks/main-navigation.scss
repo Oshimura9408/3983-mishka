@@ -1,0 +1,28 @@
+.page-header__logo {
+  align-self: center;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.main-navigation__open-menu {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  top: 32px;
+  right: 31px;
+  padding: 0;
+  display: block;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../../img/icon-menu-open.svg") no-repeat;
+}
+
