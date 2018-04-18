@@ -2,34 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Мишка">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active ">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#"> Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <header class="page-header">
+    <nav class="main-navigation">
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item__logo">
+            <a href="index.html" class="page-header__logo">
+              <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Мишка">
+            </a>
+            <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
+          </li>
+          <li class="site-list__item site-list__item--active ">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#"> Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main class="page-main">
     <div class="catalog-title">
@@ -106,21 +109,23 @@
 
     <footer class="page-footer">
       <div class="footer__wrapper">
-        <ul class="footer_social-list">
+        <ul class="footer__social-list">
           <li class="footer_social-item footer_social-item--inst">
-            <a href="#" class="footer__social-link">Instagram</a>
+            <a href="#" class="footer__social-link"><img src="img/icon-insta.svg" width="22">Instagram</a>
           </li>
           <li class="footer_social-item footer_social-item--fb">
-            <a href="#" class="footer__social-link">Facebook</a>
+            <a href="#" class="footer__social-link"><img src="img/icon-fb.svg" width="15">Facebook</a>
           </li>
           <li class="footer_social-item footer_social-item--twit">
-            <a href="#" class="footer__social-link">Twitter</a>
+            <a href="#" class="footer__social-link"><img src="img/icon-twitter.svg" width="23">Twitter</a>
           </li>
         </ul>
-        <p class="footer__studio">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/27x34" alt="HtmlAcademyLogo" class="footer__develop-logo">
-        </a>
+        <div class="page-footer__academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="footer__develop">Разработано</span>
+            <img src="img/logo-htmlacademy.svg" alt="HtmlAcademyLogo" class="footer__develop-logo">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

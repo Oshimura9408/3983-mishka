@@ -1,0 +1,35 @@
+.main-title {
+  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") no-repeat center -15px;
+  width: 320px;
+  height: 490px;
+}
+
+.page-main__title {
+  width: 260px;
+  margin: 0 auto;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.title__list {
+  list-style-type: none;
+}
+
+.title__list-item-link {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.title__list-item--interior {
+  background-color: #63d1bb;
+}
+
+.title__list-item--toys {
+  background-color: #56c3b2;
+}

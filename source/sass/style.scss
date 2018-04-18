@@ -1,13 +1,17 @@
-@import "blocks/page-header";
-@import "blocks/page-main";
-@import "fonts-text";
-@import "blocks/main-navigation";
-@import "variable";
+@import "blocks/page-header.scss";
+@import "blocks/main-title";
+@import "blocks/main-navigation.scss";
+@import "blocks/about-us.scss";
+@import "blocks/products-item.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
 
 body {
   background-color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
-body a {
+a {
   text-decoration: none;
 }

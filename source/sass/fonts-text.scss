@@ -4,18 +4,18 @@
   font-weight: 400;
   src:
     local("OpenSans"),
-    local("Open-Sans"),
+    local("OpenSans"),
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-  font-family: "OpenSansBold";
+  font-family: "OpenSans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   src:
-    local("OpenSansBold"),
-    local("OpenSans-Bold"),
+    local("OpenSans"),
+    local("OpenSans"),
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
 }

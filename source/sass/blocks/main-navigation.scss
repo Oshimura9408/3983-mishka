@@ -1,15 +1,7 @@
 .page-header__logo {
   align-self: center;
   display: block;
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-
-.main-navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  width: 86px;
 }
 
 .main-navigation__open-menu {
@@ -26,3 +18,15 @@
   background: url("../../img/icon-menu-open.svg") no-repeat;
 }
 
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+}
+
+.site-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}

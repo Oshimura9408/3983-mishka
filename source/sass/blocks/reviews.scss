@@ -1,0 +1,35 @@
+.reviews__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.reviews__user-name {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.reviews__button--prev {
+  width: 50px;
+  height: 26px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../../img/icon-left-arrow.svg") no-repeat;
+}
+
+.reviews__button--next {
+  width: 50px;
+  height: 26px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../../img/icon-right-arrow.svg") no-repeat;
+}
+
+.reviews__link-send {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
