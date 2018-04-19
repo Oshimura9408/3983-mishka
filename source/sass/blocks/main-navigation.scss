@@ -1,0 +1,32 @@
+.page-header__logo {
+  align-self: center;
+  display: block;
+  width: 86px;
+}
+
+.main-navigation__open-menu {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  top: 32px;
+  right: 31px;
+  padding: 0;
+  display: block;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../../img/icon-menu-open.svg") no-repeat;
+}
+
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+}
+
+.site-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
