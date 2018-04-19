@@ -7,12 +7,4 @@
 @import "blocks/page-footer.scss";
 @import "blocks/catalog-items.scss";
 @import "blocks/form.scss";
-
-body {
-  background-color: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
+@import "blocks/global.scss";
