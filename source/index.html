@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -41,15 +40,15 @@
     <main class="page-main">
         <div class="main-title">
           <h1 class="page-main__title">Милые штуки ручной  работы для дома</h1>
-          <ul class="title__list">
-            <li class="title__list-item title__list-item--interior">
-              <a class="title__list-item-link title__list-item-link--interior" href="#">
+          <ul class="main-title__list">
+            <li class="main-title__list-item main-title__list-item--interior">
+              <a class="main-title__list-item-link main-title__list-item-link--interior" href="#">
                 <img src="img/icon-interior.svg" alt="" width="40" height="62">
                 Предметы  интерьера
               </a>
             </li>
-            <li class="title__list-item title__list-item--toys">
-              <a class="title__list-item-link title__list-item-link--toys" href="#">
+            <li class="main-title__list-item main-title__list-item--toys">
+              <a class="main-title__list-item-link main-title__list-item-link--toys" href="#">
                 <img src="img/icon-toy.svg" alt="" width="60" height="60">
                 Детские  игрушки
               </a>
@@ -58,10 +57,10 @@
         </div>
 
         <div class="products-item" >
-          <h2 class="product-item__name">Вязаные корзинки</h2>
-          <h3 class="product-item__product-of-week">Товар недели</h3>
-          <p class="product-item__description-of-item">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="product-item_table" cellspacing="0">
+          <h2 class="products-item__name">Вязаные корзинки</h2>
+          <h3 class="products-item__product-of-week">Товар недели</h3>
+          <p class="products-item__description-of-item">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="products-item_table" cellspacing="0">
             <tr>
               <td>Цвет:</td>
               <td>«Тиффани»/серый</td>
@@ -75,10 +74,10 @@
               <td>15 см</td>
             </tr>
           </table>
-          <div class="product-item__buy">
-            <img class="product-item__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
-            <p class="product-item__price">Цена: 990 руб.</p>
-            <a class="product-item__link-order button-link" href="#">Заказать</a>
+          <div class="products-item__buy">
+            <img class="products-item__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
+            <p class="products-item__price">Цена: 990 руб.</p>
+            <a class="products-item__link-order button-link" href="#">Заказать</a>
           </div>
         </div>
 
@@ -134,7 +133,7 @@
             <a href="#" class="contacts__item contacts__item--mail">info@mimimishkashop.ru</a>
           </div>
           <div class="contacts__address">
-            <span class="contacts__item contacts__item-info--address">адрес:</span>
+            <span class="contacts__item contacts__item--info-address">адрес:</span>
             <span class="contacts__item contacts__item--address">г. Санкт-Петербург, ул. Большая Конюшен</span>
           </div>
         </div>
@@ -147,42 +146,42 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer__wrapper">
-        <ul class="footer__social-list">
+      <div class="page-footer__wrapper">
+        <ul class="page-footer__social-list">
           <li class="footer_social-item footer_social-item--inst">
-            <a href="#" class="footer__social-link"><img src="img/icon-insta.svg" width="22" height="20">Instagram</a>
+            <a href="#" class="page-footer__social-link"><img src="img/icon-insta.svg" width="22" height="20">Instagram</a>
           </li>
           <li class="footer_social-item footer_social-item--fb">
-            <a href="#" class="footer__social-link"><img src="img/icon-fb.svg" width="15" height="28">Facebook</a>
+            <a href="#" class="page-footer__social-link"><img src="img/icon-fb.svg" width="15" height="28">Facebook</a>
           </li>
           <li class="footer_social-item footer_social-item--twit">
-            <a href="#" class="footer__social-link"><img src="img/icon-twitter.svg" width="23" height="20">Twitter</a>
+            <a href="#" class="page-footer__social-link"><img src="img/icon-twitter.svg" width="23" height="20">Twitter</a>
           </li>
         </ul>
         <div class="page-footer__academy">
           <a href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="footer__develop">Разработано</span>
-            <img src="img/logo-htmlacademy.svg" alt="HtmlAcademyLogo" class="footer__develop-logo" width="27" height="34">
+            <span class="page-footer__develop">Разработано</span>
+            <img src="img/logo-htmlacademy.svg" alt="HtmlAcademyLogo" class="page-footer__develop-logo" width="27" height="34">
           </a>
         </div>
       </div>
     </footer>
 
     <!-- Modal-->
-    <section class="page__modal-window">
-      <h2 class="modal-window__title">Добавить  в корзину</h2>
-      <p class="modal-window__choose">Выберите размер:</p>
-      <form action="#" method="post" class="modal-window__form">
-        <label class="modal-window__item">
-          <input type="radio" class="modal-window__item-s">S
+    <section class="modal">
+      <h2 class="modal__title">Добавить  в корзину</h2>
+      <p class="modal__choose">Выберите размер:</p>
+      <form action="#" method="post" class="modal__form">
+        <label class="modal__item">
+          <input type="radio" class="modal__item-s">S
         </label>
-        <label class="modal-window__item">
-          <input type="radio" class="modal-window__item-m">M
+        <label class="modal__item">
+          <input type="radio" class="modal__item-m">M
         </label >
-        <label class="modal-window__item">
-          <input type="radio" class="modal-window__item-l">L
+        <label class="modal__item">
+          <input type="radio" class="modal__item-l">L
         </label>
-        <button type="submit" class="window-modal__button-add button">Добавить</button>
+        <button type="submit" class="modal__button-add button">Добавить</button>
       </form>
     </section>
   </body>

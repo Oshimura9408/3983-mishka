@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -49,43 +48,43 @@
       <section class="catalog-items">
         <article class="catalog-items__item">
           <img src="img/photo-hare-mobile@1x.jpg" class="catalog-items__img" alt="Зайчик попрыгайчик" width="260" height="195">
-          <div class="catalog-item__wrapper">
+          <div class="catalog-items__wrapper">
             <h2 class="catalog-items__title">Зайчик попрыгайчик</h2>
             <p class="catalog-items__description">Рост 30 см, вес 200 г</p>
             <div class="catalog-items__footer">
               <p class="catalog-items__price">1 200 руб.</p>
-              <a href="#" class="catalog-basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog__basket-icon"> </a>
+              <a href="#" class="catalog-basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog-items__basket-icon"> </a>
             </div>
           </div>
         </article>
 
         <article class="catalog-items__item">
           <img src="img/photo-bowl-mobile@1x.jpg" class="catalog-items__img" alt="Корзинка для белья" width="260" height="195">
-          <div class="catalog-item__wrapper">
+          <div class="catalog-items__wrapper">
             <h2 class="catalog-items__title">Корзинка для белья</h2>
             <p class="catalog-items__description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-items__footer">
               <p class="catalog-items__price">690 руб.</p>
-              <a href="#" class="catalog-basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog__basket-icon"> </a>
+              <a href="#" class="catalog-items__basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog-items__basket-icon"> </a>
             </div>
           </div>
         </article>
 
         <article class="catalog-items__item">
           <img src="img/photo-toys-mobile@1x.jpg" class="catalog-items__img" alt="Большая корзинка для игрушек" width="260" height="195">
-          <div class="catalog-item__wrapper">
+          <div class="catalog-items__wrapper">
             <h2 class="catalog-items__title">Большая корзинка для игрушек</h2>
             <p class="catalog-items__description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-items__footer">
               <p class="catalog-items__price">1 500 руб.</p>
-              <a href="#" class="catalog-basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog__basket-icon"> </a>
+              <a href="#" class="catalog-items__basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog-items__basket-icon"> </a>
             </div>
           </div>
         </article>
       </section>
 
       <section class="production-process">
-        <h1 class="process-video__title"> <img src="img/icon-video.svg" width="32" height="22" class="production-process__icon">Процесс производства</h1>
+        <h1 class="production-process__title"> <img src="img/icon-video.svg" width="32" height="22" class="production-process__icon">Процесс производства</h1>
         <div class="production-process__video">
           <a href="" class="production-process__play-button"> <img src="img/icon-play.svg" class="production-process__play-icon" width="101" height="77"> Play </a>
           <img src="img/video-mobile@1x.jpg" width="260" height="150" class="production-process__img">
@@ -100,40 +99,41 @@
     </main>
 
     <!-- Modal-->
-    <section class="page__modal-window">
-      <h2 class="modal-window__title">Добавить  в корзину</h2>
-      <p class="modal-window__choose">Выберите размер:</p>
-      <form action="#" method="post" class="modal-window__form">
-        <label class="modal-window__item">
-          <input type="radio" class="modal-window__item-s modal-window__item-s--active">S
-        </label>
-        <label class="modal-window__item">
-          <input type="radio" class="modal-window__item-m">M
-        </label >
-        <label class="modal-window__item">
-          <input type="radio" class="modal-window__item-l">L
-        </label>
-        <button type="submit" class="window-modal__button-add button">Добавить</button>
-      </form>
-    </section>
+  <section class="modal">
+    <h2 class="modal__title">Добавить  в корзину</h2>
+    <p class="modal__choose">Выберите размер:</p>
+    <form action="#" method="post" class="modal__form">
+      <label class="modal__item">
+        <input type="radio" class="modal__item-s">S
+      </label>
+      <label class="modal__item">
+        <input type="radio" class="modal__item-m">M
+      </label >
+      <label class="modal__item">
+        <input type="radio" class="modal__item-l">L
+      </label>
+      <button type="submit" class="modal__button-add button">Добавить</button>
+    </form>
+  </section>
+  </body>
 
   <footer class="page-footer">
-    <div class="footer__wrapper">
-      <ul class="footer__social-list">
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social-list">
         <li class="footer_social-item footer_social-item--inst">
-          <a href="#" class="footer__social-link"><img src="img/icon-insta.svg" width="22" height="20">Instagram</a>
+          <a href="#" class="page-footer__social-link"><img src="img/icon-insta.svg" width="22" height="20">Instagram</a>
         </li>
         <li class="footer_social-item footer_social-item--fb">
-          <a href="#" class="footer__social-link"><img src="img/icon-fb.svg" width="15" height="28">Facebook</a>
+          <a href="#" class="page-footer__social-link"><img src="img/icon-fb.svg" width="15" height="28">Facebook</a>
         </li>
         <li class="footer_social-item footer_social-item--twit">
-          <a href="#" class="footer__social-link"><img src="img/icon-twitter.svg" width="23" height="20">Twitter</a>
+          <a href="#" class="page-footer__social-link"><img src="img/icon-twitter.svg" width="23" height="20">Twitter</a>
         </li>
       </ul>
       <div class="page-footer__academy">
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="footer__develop">Разработано</span>
-          <img src="img/logo-htmlacademy.svg" alt="HtmlAcademyLogo" class="footer__develop-logo" width="27" height="34">
+          <span class="page-footer__develop">Разработано</span>
+          <img src="img/logo-htmlacademy.svg" alt="HtmlAcademyLogo" class="page-footer__develop-logo" width="27" height="34">
         </a>
       </div>
     </div>
