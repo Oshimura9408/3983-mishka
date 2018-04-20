@@ -1,0 +1,38 @@
+.page-header__logo {
+  height: 85px;
+  position: relative;
+}
+
+.logo img {
+  width: 86px;
+  height: 35px;
+}
+
+.page-header__open-menu {
+  position: absolute;
+  display: block;
+  top: 30px;
+  right: 0;
+  width: 20px;
+  height: 15px;
+  font-size: 0;
+  cursor: pointer;
+  background-image: url("../../img/icon-menu-open.svg");
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 1;
+  }
+
+  .page-header__open-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header__logo {
+    order: 2;
+  }
+}

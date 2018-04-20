@@ -1,0 +1,37 @@
+.page-header {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.page-header__container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 668px;
+  }
+
+  .main-navigation {
+    order: 3;
+  }
+
+  .page-header__user-list {
+    order: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    width: 1150px;
+  }
+
+  .main-navigation {
+    order: 1;
+  }
+}

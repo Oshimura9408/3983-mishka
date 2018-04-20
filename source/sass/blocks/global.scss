@@ -1,26 +1,9 @@
-@font-face {
-  font-family: "Open Sans";
-  src:
-    local("OpenSans"),
-    url("../../fonts/opensans.woff") format("woff"),
-    url("../../fonts/opensans.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    local("OpenSans"),
-    url("../../fonts/opensansbold.woff") format("woff"),
-    url("../../fonts/opensansbold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-}
-
 body {
   background-color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 a {

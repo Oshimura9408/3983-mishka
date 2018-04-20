@@ -1,27 +1,12 @@
-.page-header__logo {
-  align-self: center;
-  display: block;
-  width: 86px;
-}
-
-.main-navigation__open-menu {
-  position: absolute;
-  width: 20px;
-  height: 14px;
-  top: 32px;
-  right: 31px;
-  padding: 0;
-  display: block;
-  font-size: 0;
-  border: 0;
-  cursor: pointer;
-  background: url("../../img/icon-menu-open.svg") no-repeat;
+.main-navigation {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .main-navigation__list {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -29,4 +14,16 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.user-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.page-header__user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
