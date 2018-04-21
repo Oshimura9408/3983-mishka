@@ -8,48 +8,62 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <div class="page-header__logo">
-          <a class="logo">
-            <picture>
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-            </picture>
-          </a>
-        </div>
         <nav class="main-navigation">
-          <button class="page-header__open-menu" type="button"> Открыть меню </button>
-            <ul class="main-navigation__list site-list">
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-        </nav>
-        <div class="page-header__user-list">
-          <ul class="page-header__user-list user-list">
-            <li class="user-list__item">
+          <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item main-navigation__item--logo">
+              <a class="logo">
+                <picture>
+                  <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+                </picture>
+              </a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--catalog">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--order">
+              <a href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--search">
               <a href="#">
                 <img src="img/icon-search.svg" alt="Поиск" width="20" height="19">
                 Поиск по сайту
               </a>
             </li>
-            <li class="user-list__item">
+            <li class="main-navigation__item main-navigation__item--basket">
               <a href="#">
                 <img src="img/icon-cart.svg" alt="Корзина" width="20" height="19">
                 Корзина: пока пуста
               </a>
             </li>
+            <li class="main-navigation__item main-navigation__item--new">
+              <a href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--sale">
+              <a href="#">
+                Распродажа
+              </a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--delivery">
+              <span class="delivery-text">
+                Бесплатная доставка по России
+              </span>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
-
     </header>
 
     <main class="page-main">
       <section class="products">
-        <div class="products__title">
-          <h1 class="products__title-text">Милые штуки ручной  работы для дома</h1>
+        <div class="products__container">
+          <div class="products__title">
+            <h1 class="products__title-text">Милые штуки ручной  работы для дома</h1>
+          </div>
           <ul class="products-list">
             <li class="products-list_item products-list_item--interior">
               <a class="products-list_item-link products-list_item-link--interior" href="#">
@@ -70,10 +84,12 @@
           </ul>
         </div>
         <div class="products-item" >
-          <h2 class="products-item__name">Вязаные корзинки</h2>
-          <span class="products-item__product-of-week">Товар недели</span>
+          <div class="products-item__title">
+            <h2 class="products-item__name">Вязаные корзинки</h2>
+            <span class="products-item__product-of-week">Товар недели</span>
+          </div>
           <p class="products-item__description-of-item">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="products-item_table" cellspacing="0">
+          <table class="products-item_table">
             <tr>
               <td>Цвет:</td>
               <td>«Тиффани»/серый</td>
@@ -87,8 +103,10 @@
               <td>15 см</td>
             </tr>
           </table>
+          <div class="products-item__img">
+            <img class="img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
+          </div>
           <div class="products-item__buy">
-            <img class="products-item__img" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
             <p class="products-item__price">Цена: 990 руб.</p>
             <a class="products-item__link-order button-link" href="#">Заказать</a>
           </div>
@@ -100,27 +118,27 @@
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item about-us__item--eco">
-              <img src="img/icon-feature-flower.svg" width="32" height="37">
+              <!--<img src="img/icon-feature-flower.svg" width="32" height="37">-->
               Экологически  чистые материалы
             </li>
             <li class="about-us__item about-us__item--style">
-              <img src="img/icon-feature-money.svg" width="47" height="27">
+              <!--<img src="img/icon-feature-money.svg" width="47" height="27">-->
               Скандинавский стиль  по российской цене
             </li>
             <li class="about-us__item about-us__item--likes">
-              <img src="img/icon-feature-heart.svg" width="34" height="27">
+              <!--<img src="img/icon-feature-heart.svg" width="34" height="27">-->
               Увеличивает лайки на фотографиях
             </li>
             <li class="about-us__item about-us__item--handmade">
-              <img src="img/icon-feature-ball.svg" width="35" height="34">
+              <!--<img src="img/icon-feature-ball.svg" width="35" height="34">-->
               Связано вручную с  любовью и умилением
             </li>
             <li class="about-us__item about-us__item--support">
-              <img src="img/icon-feature-rocket.svg" width="55" height="23">
+              <!--<img src="img/icon-feature-rocket.svg" width="55" height="23">-->
               Поддержка отечественного производителя
             </li>
             <li class="about-us__item about-us__item-giftwrap">
-              <img src="img/icon-feature-gift.svg" width="33" height="32">
+              <!--<img src="img/icon-feature-gift.svg" width="33" height="32">-->
               Поставляется в  подарочной упаковке
             </li>
           </ul>
@@ -134,8 +152,10 @@
         </p>
         <p class="reviews__user-name">Анастасия Красильникова </p>
         <p class="reviews__user-nickname">@misssssiskras</p>
-        <button type="button" class="reviews__button reviews__button--prev"> Назад </button>
-        <button type="button" class="reviews__button reviews__button--next"> Вперед </button>
+        <div class="reviews__control">
+          <button type="button" class="reviews__button reviews__button--prev"> Назад </button>
+          <button type="button" class="reviews__button reviews__button--next"> Вперед </button>
+        </div>
         <a class="reviews__link-send button-link" href="#">Написать</a>
       </section>
 
@@ -152,8 +172,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <h1>Карта!</h1>
-          <img src="img/map-mobile@1x.jpg" alt="" width="322" height="457">
+          <img src="img/map-mobile@1x.jpg" alt="" width="322" height="457" class="map-img">
         </div>
         <a href="#" class="contacts__button button-link">Напишите нам</a>
       </section>
@@ -161,6 +180,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <picture>
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+          </picture>
+        </a>
         <ul class="page-footer__social-list">
           <li class="footer_social-item footer_social-item--inst">
             <a href="#" class="page-footer__social-link"><img src="img/icon-insta.svg" width="22" height="20">Instagram</a>

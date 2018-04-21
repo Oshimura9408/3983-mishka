@@ -1,9 +1,9 @@
 .products-item {
   position: relative;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: 27px 30px auto 30px;
+  width: 260px;
 }
 
 .products-item__name {
@@ -29,6 +29,7 @@
   font-size: 15px;
   line-height: 20px;
   color: #444444;
+  border-spacing: 0;
 }
 
 .products-item__price {
@@ -36,4 +37,60 @@
   font-size: 17px;
   line-height: 24px;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+  .products-item__title {
+    width: 668px;
+  }
+
+  .products-item__description-of-item {
+    width: 335px;
+  }
+
+  .img {
+    background: url("../../img/triple-set-tablet.jpg") no-repeat;
+    width: 333px;
+    height: 404px;
+  }
+
+  .products-item {
+    width: 668px;
+  }
+
+  .products-item_table {
+    width: 334px;
+  }
+
+  .products-item__img {
+    width: 334px;
+  }
+
+  .products-item__buy {
+    width: 334px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img {
+    background: url("../../img/triple-set-desktop.jpg") no-repeat;
+    width: 525px;
+    height: 636px;
+  }
+
+  .products-item {
+    width: 1050px;
+  }
+
+  .products-item__title {
+    width: 100%;
+  }
+
+  .products-item__description-of-item {
+    width: 60%;
+  }
+
+  .products-item_table {
+    width: 50%;
+  }
 }
