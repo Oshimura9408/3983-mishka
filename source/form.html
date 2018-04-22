@@ -60,14 +60,17 @@
 
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
-      <p class="page-main__description">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
-
+      <div class="page-main__description">
+        <p class="page-main__description-text">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+      </div>
       <form class="form" action="#" method="post">
 
         <div class="form-item form-item__radio">
-          <p class="form-item__title form-item__title-type">Тип</p>
+          <div class="form-item__name">
+            <p class="form-item__title form-item__title-type">Тип</p>
+          </div>
           <div class="radio">
             <input type="radio" class="radio__input">
             <label class="radio__label" >
@@ -81,7 +84,9 @@
         </div>
 
         <div class="form-item form-item__checkbox">
-          <p class="form-item__title form-item__title-color">Цвет</p>
+          <div class="form-item__name">
+            <p class="form-item__title form-item__title-color">Цвет</p>
+          </div>
           <div class="checkbox">
             <input type="checkbox" class="checkbox__input">
             <label class="checkbox__label">
@@ -111,19 +116,25 @@
         </div >
 
         <div class="form-item form-item__user-info">
-          <p class="form-item__title form-item__title-user-info">Фио</p>
-          <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
-          <label class="user-info__label user-info__label-name">
-            Имя:
-          </label>
-          <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
-          <label class="user-info__label user-info__label-last-name">
-            Фамилия:
-          </label>
-          <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
-          <label class="user-info__label user-info__label-patronymic">
-            Отчество:
-          </label>
+          <div class="form-item__name">
+            <p class="form-item__title form-item__title-user-info">Фио</p>
+          </div>
+          <div class="input-text">
+            <label class="user-info__label user-info__label-name">
+              Имя:
+            </label>
+            <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
+
+            <label class="user-info__label user-info__label-last-name">
+              Фамилия:
+            </label>
+            <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
+
+            <label class="user-info__label user-info__label-patronymic">
+              Отчество:
+            </label>
+            <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
+          </div>
         </div>
 
         <div class="form-item form-item__phone">
