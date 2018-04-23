@@ -33,3 +33,19 @@
   font-size: 18px;
   line-height: 20px;
 }
+
+.reviews {
+  width: 260px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    width: 668px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    width: 1050px;
+  }
+}

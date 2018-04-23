@@ -1,0 +1,9 @@
+.page-header__container {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .page-header__container {
+    flex-wrap: wrap;
+  }
+}

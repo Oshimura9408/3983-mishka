@@ -38,3 +38,129 @@
   color: #444444;
   text-transform: uppercase;
 }
+
+.page-main__title {
+  text-align: center;
+}
+
+.page-main__description {
+  width: 260px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form-item {
+  width: 260px;
+  margin: 0;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item__user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item__wishes {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__button {
+  width: 230px;
+}
+
+@media (min-width: 768px) {
+  .form-item {
+    width: 668px;
+    margin: 0;
+    display: inline-flex;
+  }
+
+  .page-main__description {
+    width: 668px;
+  }
+
+  .radio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .form-item__name {
+    width: 165px;
+  }
+
+  .radio__label {
+    width: 470px;
+  }
+
+  .checkbox__label {
+    width: 221px;
+  }
+
+  .form-item__user-info {
+    flex-direction: row;
+  }
+
+  .input-text {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-item {
+    width: 1050px;
+    margin: 0;
+    display: inline-flex;
+  }
+
+  .page-main__description {
+    width: 1050px;
+  }
+
+  .radio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+  }
+
+  .radio__label {
+    width: 770px;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 740px;
+  }
+
+  .input-text {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

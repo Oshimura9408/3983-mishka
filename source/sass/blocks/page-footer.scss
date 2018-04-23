@@ -4,6 +4,9 @@
 
 .page-footer__social-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer_social-item--fb {
@@ -27,4 +30,26 @@
 .footer__develop-logo svg {
   width: 27px;
   height: 34px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

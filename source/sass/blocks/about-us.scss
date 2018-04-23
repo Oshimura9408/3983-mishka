@@ -9,9 +9,88 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us__item {
   padding-top: 57px;
   padding-bottom: 30px;
+}
+
+.about-us {
+  width: 260px;
+}
+
+.about-us__item--eco::before {
+  content: "";
+  width: 32px;
+  height: 37px;
+  background: url("../../img/icon-feature-flower.svg");
+  display: block;
+}
+
+.about-us__item--style::before {
+  content: "";
+  width: 47px;
+  height: 27px;
+  background: url("../../img/icon-feature-money.svg");
+  display: block;
+}
+
+.about-us__item--likes::before {
+  content: "";
+  width: 34px;
+  height: 27px;
+  background: url("../../img/icon-feature-heart.svg");
+  display: block;
+}
+
+.about-us__item--handmade::before {
+  content: "";
+  width: 35px;
+  height: 34px;
+  background: url("../../img/icon-feature-ball.svg");
+  display: block;
+}
+
+.about-us__item--support::before {
+  content: "";
+  width: 55px;
+  height: 23px;
+  background: url("../../img/icon-feature-rocket.svg");
+  display: block;
+}
+
+.about-us__item-giftwrap::before {
+  content: "";
+  width: 33px;
+  height: 32px;
+  background: url("../../img/icon-feature-gift.svg");
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .about-us__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-us {
+    width: 668px;
+  }
+
+  .about-us__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    width: 700px;
+  }
+
+  .about-us__item {
+    width: 50%;
+  }
 }

@@ -7,48 +7,70 @@
   </head>
   <body>
   <header class="page-header">
-    <nav class="main-navigation">
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item__logo">
-            <a href="index.html" class="page-header__logo">
-              <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
+    <div class="page-header__container">
+      <nav class="main-navigation">
+        <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--logo">
+            <a class="logo">
+              <picture>
+                <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+              </picture>
             </a>
-            <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
           </li>
-          <li class="site-list__item site-list__item--active ">
+          <li class="main-navigation__item main-navigation__item--catalog">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
+          <li class="main-navigation__item main-navigation__item--order">
+            <a href="form.html">
+              Вязание на заказ
+            </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-navigation__item main-navigation__item--search">
             <a href="#">
               <img src="img/icon-search.svg" alt="Поиск" width="20" height="19">
               Поиск по сайту
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="main-navigation__item main-navigation__item--basket">
             <a href="#">
               <img src="img/icon-cart.svg" alt="Корзина" width="20" height="19">
               Корзина: пока пуста
             </a>
           </li>
+          <li class="main-navigation__item main-navigation__item--new">
+            <a href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--sale">
+            <a href="#">
+              Распродажа
+            </a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--delivery">
+              <span class="delivery-text">
+                Бесплатная доставка по России
+              </span>
+          </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
-      <p class="page-main__description">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
-
+      <div class="page-main__description">
+        <p class="page-main__description-text">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+      </div>
       <form class="form" action="#" method="post">
 
         <div class="form-item form-item__radio">
-          <p class="form-item__title form-item__title-type">Тип</p>
+          <div class="form-item__name">
+            <p class="form-item__title form-item__title-type">Тип</p>
+          </div>
           <div class="radio">
             <input type="radio" class="radio__input">
             <label class="radio__label" >
@@ -62,7 +84,9 @@
         </div>
 
         <div class="form-item form-item__checkbox">
-          <p class="form-item__title form-item__title-color">Цвет</p>
+          <div class="form-item__name">
+            <p class="form-item__title form-item__title-color">Цвет</p>
+          </div>
           <div class="checkbox">
             <input type="checkbox" class="checkbox__input">
             <label class="checkbox__label">
@@ -92,19 +116,25 @@
         </div >
 
         <div class="form-item form-item__user-info">
-          <p class="form-item__title form-item__title-user-info">Фио</p>
-          <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
-          <label class="user-info__label user-info__label-name">
-            Имя:
-          </label>
-          <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
-          <label class="user-info__label user-info__label-last-name">
-            Фамилия:
-          </label>
-          <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
-          <label class="user-info__label user-info__label-patronymic">
-            Отчество:
-          </label>
+          <div class="form-item__name">
+            <p class="form-item__title form-item__title-user-info">Фио</p>
+          </div>
+          <div class="input-text">
+            <label class="user-info__label user-info__label-name">
+              Имя:
+            </label>
+            <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
+
+            <label class="user-info__label user-info__label-last-name">
+              Фамилия:
+            </label>
+            <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
+
+            <label class="user-info__label user-info__label-patronymic">
+              Отчество:
+            </label>
+            <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
+          </div>
         </div>
 
         <div class="form-item form-item__phone">
@@ -135,6 +165,11 @@
     </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <picture>
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </picture>
+      </a>
       <ul class="page-footer__social-list">
         <li class="footer_social-item footer_social-item--inst">
           <a href="#" class="page-footer__social-link"><img src="img/icon-insta.svg" width="22" height="20">Instagram</a>
