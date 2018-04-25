@@ -1,13 +1,14 @@
 .products__container {
-  margin: 0 auto;
-  width: 320px;
+  width: 100%;
+  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") no-repeat center top;
 }
 
-.products__title {
-  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") no-repeat center top;
-  width: 320px;
-  height: 370px;
-}
+//.products__title {
+//  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") no-repeat center top;
+//  width: 320px;
+//  height: 370px;
+//  margin-top: 0;
+//}
 
 .products__title-text {
   width: 260px;
@@ -20,23 +21,30 @@
 }
 
 .products-list {
-  width: 320px;
+  //width: 320px;
   padding: 0;
-  margin: auto;
+  margin: 0 auto;
   list-style-type: none;
 }
 
 .products-list_item {
   padding: 27px 35px;
-  position: relative;
+  //position: relative;
+  //margin: 0 auto;
 }
 
-.products-list img {
-  opacity: 0.2;
-  position: absolute;
-  left: 109px;
-  top: 23px;
+.products-list_item a {
+  display: block;
+  width: 130px;
+  margin: 0 auto;
 }
+
+//.products-list img {
+//  opacity: 0.2;
+//  position: absolute;
+//  left: 109px;
+//  top: 23px;
+//}
 
 .products-list_item-link {
   font-size: 19px;
@@ -46,23 +54,31 @@
 }
 
 .products-list_item--interior {
+  position: relative;
   background-color: #63d1bb;
 }
 
-.products-list_item-link--interior::before {
-  content: "";
-  display: block;
+.products-list_item-link--interior-icon {
   width: 40px;
   height: 62px;
-  background: url("../../img/icon-interior.svg");
-  opacity: 0.2;
   position: absolute;
-  left: 240px;
+  top: 20px;
+  right: 147px;
 }
+
+//.products-list_item-link--interior::before {
+//  content: "";
+//  display: block;
+//  width: 40px;
+//  height: 62px;
+//  background: url("../../img/icon-interior.svg");
+//  opacity: 0.2;
+//  position: absolute;
+//  left: 240px;
+//}
 
 .products-list_item-link--toys::before {
   content: "";
-  display: block;
   width: 60px;
   height: 60px;
   background: url("../../img/icon-toy.svg");

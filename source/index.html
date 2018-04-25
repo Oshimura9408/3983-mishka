@@ -3,73 +3,83 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="main-navigation">
-          <button class="main-navigation__open-menu" type="button"> Открыть меню </button>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--logo">
-              <a class="logo">
-                <picture>
-                  <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-                </picture>
-              </a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--catalog">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--order">
-              <a href="form.html">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--search">
-              <a href="#">
-                <img src="img/icon-search.svg" alt="Поиск" width="20" height="19">
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--basket">
-              <a href="#">
-                <img src="img/icon-cart.svg" alt="Корзина" width="20" height="19">
-                Корзина: пока пуста
-              </a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--new">
-              <a href="#">
-                Новые поступления
-              </a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--sale">
-              <a href="#">
-                Распродажа
-              </a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--delivery">
+  <header class="page-header page-header__toggle--closed page-header--nojs">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+    </a>
+    <button class="page-header__toggle" type="button"> Открыть меню </button>
+    <ul class="site-list">
+      <li class="site-list__item site-list__item--catalog">
+        <a href="catalog.html">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--order">
+        <a href="form.html">
+          Вязание на заказ
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--new">
+        <a href="#">
+          Новые поступления
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--sale">
+        <a href="#">
+          Распродажа
+        </a>
+      </li>
+    </ul>
+    <ul class="user-list">
+      <li class="user-list__item user-list__item--search">
+        <a href="#" class="user-list__search">
+          <svg class="user-list__search-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+</svg>
+          Поиск по сайту
+        </a>
+      </li>
+      <li class="user-list__item user-list__item--cart">
+        <a href="#" class="user-list__cart">
+          <svg class="user-list__cart-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+  <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+</svg>
+          Корзина: пока пуста
+        </a>
+      </li>
+      <li class="user-list__item user-list__item--delivery">
               <span class="delivery-text">
                 Бесплатная доставка по России
               </span>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </li>
+    </ul>
+  </header>
 
     <main class="page-main">
       <section class="products">
         <div class="products__container">
-          <div class="products__title">
-            <h1 class="products__title-text">Милые штуки ручной  работы для дома</h1>
-          </div>
+          <!--<div class="products__title">-->
+            <h1 class="products__title-text">Милые штуки ручной работы&nbsp;для дома</h1>
+          <!--</div>-->
           <ul class="products-list">
             <li class="products-list_item products-list_item--interior">
               <a class="products-list_item-link products-list_item-link--interior" href="#">
                 Предметы
                 <br>
                 интерьера
+                <svg class="products-list_item-link--interior-icon" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
+  <g>
+    <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
+    <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
+    <path d="M-225.262-17.446h-11.732c0-1.244-1.015-2.229-2.3-2.229c-1.283,0-2.3,0.985-2.3,2.229h-11.737l-6.073,25.517 c0.794-0.461,1.589-0.992,2.632-0.992c1.359,0,2.243,0.818,2.924,1.375c0.682,0.557,1.162,0.849,1.447,0.849 c0.292,0.001,0.769-0.287,1.451-0.836c0.681-0.548,1.564-1.358,2.915-1.358c1.349,0,2.237,0.806,2.919,1.354 c0.684,0.549,1.161,0.84,1.451,0.84c0.146,0,0.338-0.073,0.58-0.214c0.242-0.141,0.53-0.353,0.872-0.626 c0.512-0.411,1.139-0.967,1.99-1.218c0.284-0.085,0.593-0.136,0.93-0.136c1.347,0,2.238,0.805,2.92,1.354 c0.683,0.548,1.159,0.84,1.451,0.84c0.287-0.002,0.766-0.296,1.445-0.85c0.684-0.554,1.571-1.367,2.925-1.367 c1.356,0,2.239,0.817,2.919,1.371c0.342,0.276,0.631,0.489,0.872,0.631c0.24,0.143,0.431,0.214,0.575,0.214 c0.288,0,0.762-0.293,1.442-0.854c0.68-0.559,1.567-1.384,2.929-1.384c1.044,0,1.839,0.533,2.632,0.997L-225.262-17.446z"/>
+    <path d="M-235.881,33.82h-6.864c-0.657,0-1.15,0.479-1.15,1.115c0,0.635,0.493,1.113,1.15,1.113h6.9c0.655,0,1.15-0.479,1.15-1.113 c0-0.636-0.495-1.115-1.15-1.115H-235.881z"/>
+    <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
+  </g>
+</svg>
                 <!--<img src="img/icon-interior.svg" alt="" width="40" height="62">-->
               </a>
             </li>
@@ -222,5 +232,8 @@
         <button type="submit" class="modal__button-add button">Добавить</button>
       </form>
     </section>
+  <script src="js/menu.js">
+
+  </script>
   </body>
 </html>
