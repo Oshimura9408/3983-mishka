@@ -1,9 +1,10 @@
 body {
   background-color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
-  min-width: 320px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
   margin: 0;
-  padding: 0;
 }
 
 img {
@@ -13,4 +14,5 @@ img {
 
 a {
   text-decoration: none;
+  color: #000000;
 }

@@ -2,80 +2,83 @@
   background-color: #ffffff;
   //display: flex;
   //flex-direction: column;
-  position: relative;
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
 }
 
-.page-header__logo {
-  height: 80px;
+.page-header__logo-image {
+  display: block;
+  width: 86px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 22px;
+}
+
+.page-header__button {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 21px;
+  height: 21px;
+  background: #ffffff url("../../img/icon-menu-close.svg") no-repeat center;
+  border: none;
+  font-size: 0;
+
+  &--closed {
+    background: #ffffff url("../../img/icon-menu-open.svg") no-repeat center;
+    //width: 20px;
+    //height: 14px;
+  }
+}
+
+.page-header__logo-container {
+  position: relative;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   text-align: center;
 }
 
-.page-header__logo img {
-  display: block;
-  margin: 0 auto;
-  width: 86px;
-  height: 80px;
-}
-
-.site-list,
-.user-list {
-  list-style: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.site-list__item {
-  margin: 0 auto;
-  //width: 100%;
-}
-
-.site-list__item--new,
-.site-list__item--sale,
 .user-list__item--delivery {
   display: none;
 }
 
 @media (min-width: 768px) {
+  .page-header__button {
+    display: none;
+  }
+
   .page-header {
-    //width: 668px;
+    width: 668px;
     padding: 0 50px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .page-header__logo {
-    //flex-basis: 100%;
-    //width: 113px;
-    border-bottom: #e7e7e7 1px solid;
+  .page-header__logo-container {
+    width: 113px;
+    margin-left: 0;
   }
 
-  .page-header__logo img {
+  .page-header__logo-image {
     margin-left: 0;
     width: 113px;
   }
 }
 
 @media (min-width: 1250px) {
-  .site-list__item--new,
-  .site-list__item--sale {
-    display: block;
-  }
-
   .page-header {
-    flex-direction: row;
-  }
-
-  .page-header__logo {
-    order: -2;
+    justify-content: space-between;
+    width: 1050px;
     margin: 0 auto;
-  }
+    display: flex;
+    flex-direction: row;
 
-  .site-list {
-    order: -3;
-  }
-
-  .page-header__logo img {
-    width: 140px;
+    .page-header__logo-container {
+      order: 2;
+    }
   }
 }
