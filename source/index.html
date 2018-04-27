@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="page-header page-header--opened">
+  <header class="page-header">
     <div class="page-header__logo-container">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </picture>
       <button class="page-header__button" type="button"> Открыть меню </button>
     </div>
     <ul class="site-list site-list--index">
@@ -76,17 +80,18 @@
 
     <main class="page-main">
       <section class="products">
-        <div class="products__container">
+        <div class="products__wrapper">
           <!--<div class="products__title">-->
-            <h1 class="products__title-text">Милые штуки ручной работы&nbsp;для дома</h1>
+            <h1 class="products__title-text">Милые штуки ручной &nbsp;работы&nbsp;для дома</h1>
           <!--</div>-->
           <ul class="products-list">
             <li class="products-list_item products-list_item--interior">
-              <a class="products-list_item-link products-list_item-link--interior" href="#">
-                Предметы
-                <br>
-                интерьера
-                <svg class="products-list_item-link--interior-icon" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
+              <div class="products-list__container">
+                <a class="products-list_item-link products-list_item-link--interior" href="#">
+                  Предметы
+                  <br>
+                  интерьера
+                  <svg class="products-list_item-link--interior-icon" version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
   <g>
     <path d="M-244.227,18.283c-0.286,0.966-0.245,2.191,0.027,3.639c0.494,2.635,1.687,6.041,2.358,9.67h5.062 c0.696-3.641,1.949-7.05,2.471-9.683c0.287-1.445,0.33-2.66,0.041-3.617c-0.275-0.899-0.89-1.618-2.021-2.303h-5.997 C-243.361,16.668-243.96,17.38-244.227,18.283z"/>
     <path d="M-232.395,38.278h-13.799c-1.293,0-2.299,0.976-2.299,2.229v2.229h2.299h13.799h2.299v-2.229 C-230.096,39.254-231.102,38.278-232.395,38.278z"/>
@@ -95,16 +100,23 @@
     <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
   </g>
 </svg>
-                <!--<img src="img/icon-interior.svg" alt="" width="40" height="62">-->
-              </a>
+                  <!--<img src="img/icon-interior.svg" alt="" width="40" height="62">-->
+                </a>
+              </div>
             </li>
             <li class="products-list_item products-list_item--toys">
+              <div class="products-list__container products-list__container--toys">
               <a class="products-list_item-link products-list_item-link--toys" href="#">
                 Детские
                 <br>
                 игрушки
+                <svg class="products-list_item-link--toys-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" viewBox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
+  <path fill="#231F20" d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
+</svg>
+
                 <!--<img src="img/icon-toy.svg" alt="" width="60" height="60">-->
               </a>
+              </div>
             </li>
           </ul>
         </div>
