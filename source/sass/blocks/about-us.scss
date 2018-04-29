@@ -41,7 +41,6 @@
   }
 }
 
-
 //.about-us__item--eco::before {
 //  content: "";
 //  width: 32px;
@@ -129,12 +128,21 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .about-us {
-    width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  //.about-us__list {
+  //  justify-content: space-between;
+  //}
+
+  .about-us__wrapper {
+    width: 850px;
   }
 
   .about-us__item {
-    width: 50%;
+    width: 40%;
   }
 }

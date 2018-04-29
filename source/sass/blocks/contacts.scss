@@ -11,22 +11,47 @@
   color: #444444;
 }
 
-.contacts__item--mail {
-  text-decoration: underline;
+.contacts__item--info {
+  width: 30%;
 }
 
-.contacts {
+.contacts__item--mail {
+  text-decoration: underline;
+  color: #46c1ae;
+}
+
+.contacts__item--mail-text {
+  color: black;
+}
+
+.contacts__text-wrapper {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__email {
   width: 260px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts__address {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__item--info-address {
+  width: 30%;
+}
+
+.contacts__item--address {
+  width: 60%;
 }
 
 @media (min-width: 768px) {
-  .contacts {
-    width: 668px;
-  }
-
   .map-img {
     background: url("../../img/map-tablet@1x.jpg");
     width: 768px;
