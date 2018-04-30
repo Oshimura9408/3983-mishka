@@ -3,10 +3,14 @@
 }
 
 .page-footer__social-list {
+  width: 260px;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0;
+  margin: 25px auto;
+  border-bottom: #e5e5e5 1px solid;
 }
 
 .footer_social-item--fb {
@@ -21,15 +25,21 @@
   font-size: 0;
 }
 
+.page-footer__academy {
+  margin: 0 auto;
+}
+
 .page-footer__develop {
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
 }
 
-.footer__develop-logo svg {
+.page-footer__develop-logo {
+  padding-left: 25px;
   width: 27px;
   height: 34px;
+  fill: #63d1bb;
 }
 
 .page-footer__wrapper {
@@ -44,12 +54,46 @@
 @media (min-width: 768px) {
   .page-footer__logo {
     display: block;
+    width: 33%;
   }
 
   .page-footer__wrapper {
+    width: 668px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    //flex-wrap: wrap;
+    //justify-content: space-between;
+    padding: 57px 50px;
+    margin: 0 auto;
+  }
+
+  .page-footer__social-list {
+    margin: 0;
+    border: none;
+    width: 33%;
+  }
+
+  .page-footer__academy {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-footer__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .page-footer__social-list {
+    width: 200px;
+  }
+
+  .page-footer__logo {
+    width: 40%;
+  }
+
+  .page-footer__academy {
+    width: 40%;
+    padding-left: 50px;
   }
 }
