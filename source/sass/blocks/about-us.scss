@@ -90,21 +90,30 @@
 //}
 
 @media (min-width: 768px) {
+  .about-us {
+    padding-top: 10px;
+  }
+
   .about-us__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
   }
 
   .about-us__item {
     width: 50%;
+    font-size: 20px;
+    line-height: 22px;
 
     &:nth-child(1) {
       order: 1;
+      padding-bottom: 60px;
     }
 
     &:nth-child(2) {
       order: 3;
+      padding-bottom: 50px;
     }
 
     &:nth-child(3) {
@@ -127,23 +136,53 @@
   .about-us__wrapper {
     width: 669px;
   }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 @media (min-width: 1250px) {
   .about-us {
     width: 100%;
     margin: 0 auto;
+    padding-top: 17px;
   }
 
-  //.about-us__list {
-  //  justify-content: space-between;
-  //}
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 68px;
+  }
+
+  .about-us__list {
+    justify-content: normal;
+    margin: 0;
+    padding-left: 77px;
+  }
 
   .about-us__wrapper {
     width: 850px;
   }
 
   .about-us__item {
-    width: 40%;
+    width: 350px;
+  }
+
+  .about-us__item--eco {
+    //width: 230px;
+  }
+
+  .about-us__text--eco {
+    width: 230px;
+  }
+
+  .about-us__text--giftwrap {
+    width: 290px;
+  }
+
+  .about-us__text--handmade {
+    width: 290px;
   }
 }

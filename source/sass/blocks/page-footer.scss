@@ -9,8 +9,9 @@
   align-items: center;
   justify-content: space-around;
   padding: 0;
-  margin: 25px auto;
+  margin: 25px auto 0 auto;
   border-bottom: #e5e5e5 1px solid;
+  //padding-bottom: 15px;
 }
 
 .footer_social-item--fb {
@@ -27,6 +28,8 @@
 
 .page-footer__academy {
   margin: 0 auto;
+  padding-bottom: 22px;
+  padding-top: 8px;
 }
 
 .page-footer__develop {
@@ -63,18 +66,19 @@
     flex-direction: row;
     //flex-wrap: wrap;
     //justify-content: space-between;
-    padding: 57px 50px;
+    padding: 52px 50px;
     margin: 0 auto;
   }
 
   .page-footer__social-list {
     margin: 0;
     border: none;
-    width: 33%;
+    width: 27%;
   }
 
   .page-footer__academy {
-    width: 33%;
+    width: 28%;
+    padding-left: 68px;
   }
 }
 
@@ -85,15 +89,15 @@
   }
 
   .page-footer__social-list {
-    width: 200px;
+    width: 204px;
   }
 
   .page-footer__logo {
-    width: 40%;
+    width: 45%;
   }
 
   .page-footer__academy {
-    width: 40%;
-    padding-left: 50px;
+    width: 20%;
+    padding-left: 240px;
   }
 }

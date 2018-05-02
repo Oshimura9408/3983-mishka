@@ -1,5 +1,6 @@
 .reviews {
   display: block;
+  padding-bottom: 75px;
 }
 
 .reviews__container {
@@ -50,9 +51,19 @@
 }
 
 @media (min-width: 768px) {
+  .reviews {
+    padding-top: 35px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 17px;
+    padding-bottom: 105px;
+    z-index: 200;
+  }
+
   .reviews__container {
     padding-top: 45px;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
     width: 668px;
     margin: 0 auto;
     position: relative;
@@ -67,12 +78,27 @@
   .reviews__user-review {
     font-size: 17px;
     line-height: 30px;
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .reviews__user-name {
+    margin: 0;
+    margin-top: 56px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .reviews__user-nickname {
+    margin: 0;
   }
 
   .reviews__control {
     position: absolute;
-    right: 0;
-    bottom: 10px;
+    right: -43px;
+    bottom: 30px;
     //border: red 1px solid; !!
     border: none;
   }
@@ -92,31 +118,52 @@
   }
 
   .reviews__link-wapper {
+    font-weight: 700;
+    text-transform: uppercase;
     position: absolute;
-    width: 160px;
+    width: 176px;
     top: 80px;
     right: 0;
   }
 }
 
 @media (min-width: 1250px) {
-  .reviews__container {
-    width: 1050px;
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 90px;
   }
 
   .reviews__title {
-    margin-left: 203px;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0;
+    margin-left: 170px;
+    padding-top: 19px;
+  }
+
+  .reviews__container {
+    width: 1050px;
+    padding-bottom: 82px;
+    padding-top: 52px;
   }
 
   .reviews__user-review {
-    margin-left: 203px;
+    margin-left: 175px;
+    padding-top: 46px;
+    width: 790px;
   }
 
   .reviews__user-name {
-    margin-left: 203px;
+    margin-left: 175px;
   }
 
   .reviews__user-nickname {
-    margin-left: 203px;
+    margin-left: 175px;
+  }
+
+  .reviews__control {
+    position: absolute;
+    right: -42px;
+    bottom: 99px;
   }
 }
