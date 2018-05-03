@@ -40,10 +40,6 @@
   width: 230px;
 }
 
-.page-main__title {
-  text-align: center;
-}
-
 .page-main__description {
   width: 260px;
   font-weight: 400;
@@ -76,7 +72,23 @@
   flex-direction: column;
 }
 
+.page-main__title {
+  text-align: center;
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  padding: 75px 0;
+}
+
 @media (min-width: 768px) {
+  .page-main__title {
+    text-align: center;
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 96px;
+  }
+
   .form-item {
     width: 668px;
     margin: 0;
