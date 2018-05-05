@@ -4,6 +4,11 @@
   line-height: 30px;
 }
 
+.about-us__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .about-us__list {
   list-style: none;
   font-weight: 700;
@@ -11,86 +16,173 @@
   line-height: 20px;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .about-us__item {
   padding-top: 57px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .about-us {
-  width: 260px;
+  //width: 260px;
+  //position: relative;
 }
 
-.about-us__item--eco::before {
-  content: "";
-  width: 32px;
-  height: 37px;
-  background: url("../../img/icon-feature-flower.svg");
-  display: block;
+.about-us svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #63d1bb;
+
+  path {
+    fill: #63d1bb;
+  }
 }
 
-.about-us__item--style::before {
-  content: "";
-  width: 47px;
-  height: 27px;
-  background: url("../../img/icon-feature-money.svg");
-  display: block;
-}
+//.about-us__item--eco::before {
+//  content: "";
+//  width: 32px;
+//  height: 37px;
+//  background: url("../../img/icon-feature-flower.svg");
+//  display: block;
+//}
 
-.about-us__item--likes::before {
-  content: "";
-  width: 34px;
-  height: 27px;
-  background: url("../../img/icon-feature-heart.svg");
-  display: block;
-}
-
-.about-us__item--handmade::before {
-  content: "";
-  width: 35px;
-  height: 34px;
-  background: url("../../img/icon-feature-ball.svg");
-  display: block;
-}
-
-.about-us__item--support::before {
-  content: "";
-  width: 55px;
-  height: 23px;
-  background: url("../../img/icon-feature-rocket.svg");
-  display: block;
-}
-
-.about-us__item-giftwrap::before {
-  content: "";
-  width: 33px;
-  height: 32px;
-  background: url("../../img/icon-feature-gift.svg");
-  display: block;
-}
+//.about-us__item--style::before {
+//  content: "";
+//  width: 47px;
+//  height: 27px;
+//  background: url("../../img/icon-feature-money.svg");
+//  display: block;
+//}
+//
+//.about-us__item--likes::before {
+//  content: "";
+//  width: 34px;
+//  height: 27px;
+//  background: url("../../img/icon-feature-heart.svg");
+//  display: block;
+//}
+//
+//.about-us__item--handmade::before {
+//  content: "";
+//  width: 35px;
+//  height: 34px;
+//  background: url("../../img/icon-feature-ball.svg");
+//  display: block;
+//}
+//
+//.about-us__item--support::before {
+//  content: "";
+//  width: 55px;
+//  height: 23px;
+//  background: url("../../img/icon-feature-rocket.svg");
+//  display: block;
+//}
+//
+//.about-us__item-giftwrap::before {
+//  content: "";
+//  width: 33px;
+//  height: 32px;
+//  background: url("../../img/icon-feature-gift.svg");
+//  display: block;
+//}
 
 @media (min-width: 768px) {
+  .about-us {
+    padding-top: 10px;
+  }
+
   .about-us__list {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .about-us {
-    width: 668px;
+    justify-content: space-between;
+    margin-top: 50px;
   }
 
   .about-us__item {
     width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(1) {
+      order: 1;
+      padding-bottom: 60px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      padding-bottom: 50px;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+  }
+
+  .about-us__wrapper {
+    width: 669px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .about-us {
-    width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 17px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 68px;
+  }
+
+  .about-us__list {
+    justify-content: normal;
+    margin: 0;
+    padding-left: 77px;
+  }
+
+  .about-us__wrapper {
+    width: 850px;
   }
 
   .about-us__item {
-    width: 50%;
+    width: 350px;
+  }
+
+  .about-us__item--eco {
+    //width: 230px;
+  }
+
+  .about-us__text--eco {
+    width: 230px;
+  }
+
+  .about-us__text--giftwrap {
+    width: 290px;
+  }
+
+  .about-us__text--handmade {
+    width: 290px;
   }
 }
