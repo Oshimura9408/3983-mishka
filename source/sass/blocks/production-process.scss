@@ -1,0 +1,141 @@
+.production-process {
+  width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: #ededed 1px solid;
+  margin-bottom: 60px;
+}
+
+.production-process__wrapper {
+  margin-top: 24px;
+}
+
+.production-process__title {
+  width: 170px;
+  position: relative;
+  margin-left: auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    top: 6px;
+    left: -55px;
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.production-process__img {
+  margin-top: 7px;
+}
+
+.production-process__content {
+  margin-left: 33px;
+  margin-top: 22px;
+  width: 192px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.production-process__order-button {
+  width: 192px;
+  margin: 24px auto 33px auto;
+  font-size: 17px;
+  line-height: 16px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: #444444 1px solid;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .production-process {
+    width: calc(87%);
+    margin: -5px auto 0 auto;
+  }
+
+  .production-process__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .production-process__img {
+    width: 668px;
+    min-height: 455px;
+    margin: 0 auto;
+  }
+
+  .production-process__title {
+    font-size: 20px;
+    width: 250px;
+    margin-left: calc(15.7%);
+    margin-top: 40px;
+    order: 2;
+  }
+
+  .production-process__content {
+    width: calc(87.7%);
+    margin-top: 10px;
+    margin-left: calc(6%);
+    font-size: 15px;
+    line-height: 30px;
+    order: 3;
+  }
+
+  .production-process__order-button {
+    width: calc(87.4%);
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .production-process {
+    position: relative;
+    width: calc(91.3%);
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 105px;
+  }
+
+  .production-process__title {
+    width: 220px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: calc(6.7%);
+    margin-top: 95px;
+    order: 2;
+
+    &::before {
+      top: -53px;
+      left: 43px;
+    }
+  }
+
+  .production-process__img {
+    width: 682px;
+    order: 1;
+    margin: 0;
+  }
+
+  .production-process__content {
+    margin-left: calc(72.4%);
+    width: 288px;
+    margin-top: -280px;
+    order: 3;
+  }
+
+  .production-process__order-button {
+    position: absolute;
+    right: calc(5.4%);
+    bottom: 16px;
+    width: calc(21.9%);
+  }
+}
