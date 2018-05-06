@@ -31,14 +31,15 @@
 }
 
 .about-us svg {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   fill: #63d1bb;
 
-  path {
-    fill: #63d1bb;
-  }
+  //path {
+  //  fill: #63d1bb;
+  //}
 }
 
 //.about-us__item--eco::before {
