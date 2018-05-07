@@ -115,22 +115,25 @@
   .page-footer__wrapper--noindex {
     width: 1050px;
     margin: 0 auto;
-    padding-top: 52px;
-    padding-right: 45px;
-    padding-bottom: 52px;
-    padding-left: 45px;
+    //padding-top: 52px;
+    //padding-right: 45px;
+    //padding-bottom: 52px;
+    //padding-left: 45px;
 
     .page-footer__social-list {
-      width: 204px;
+      width: 18%;
+      padding: 0;
+      margin-left: 249px;
     }
 
     .page-footer__logo {
-      width: 45%;
+      width: 18%;
     }
 
     .page-footer__academy {
-      width: 20%;
-      padding-left: 240px;
+      width: 18%;
+      padding: 0;
+      margin-left: 234px;
     }
   }
 

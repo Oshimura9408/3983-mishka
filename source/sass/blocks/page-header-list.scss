@@ -58,6 +58,11 @@
     width: calc(100%);
   }
 
+  .site-list__container,
+  .user-list__container {
+    width: 260px;
+  }
+
   .page-header--closed .site-list {
     display: none;
   }

@@ -17,7 +17,7 @@
 
 .products__title-text {
   width: 260px;
-  margin: 75px auto 135px auto;
+  margin: 75px auto 120px auto;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -34,7 +34,9 @@
 }
 
 .products-list_item {
-  padding: 25px 15px;
+  padding: 0 15px;
+  padding-bottom: 25px;
+  padding-top: 30px;
   //position: relative;
   display: inline-flex;
   width: 90%;
@@ -77,7 +79,7 @@
   height: 62px;
   position: absolute;
   top: -6px;
-  right: -65px;
+  right: -75px;
   opacity: 0.2;
 }
 
@@ -114,8 +116,8 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  top: -6px;
-  right: -90px;
+  top: -10px;
+  right: -85px;
   opacity: 0.2;
 }
 

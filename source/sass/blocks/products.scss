@@ -2,7 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-bottom: 60px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  padding-bottom: 55px;
+  z-index: 200;
 }
 
 @media (min-width: 768px) {
