@@ -9,7 +9,7 @@
   <body>
   <header class="page-header page-header--noindex">
     <div class="page-header__logo-container">
-      <a href="index.html">
+      <a href="index.html" class="page-header__logo-link">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -21,7 +21,7 @@
     <ul class="site-list site-list--noindex">
       <li class="site-list__item">
         <div class="site-list__container">
-          <a href="catalog.html">
+          <a href="catalog.html" class="site-list__link">
             Каталог товаров
           </a>
         </div>
@@ -29,28 +29,28 @@
       </li>
       <li class="site-list__item">
         <div class="site-list__container">
-          <a href="form.html">
+          <a href="form.html" class="site-list__link">
             Вязание на заказ
           </a>
         </div>
       </li>
       <li class="site-list__item site-list__item--new">
         <div class="site-list__container">
-          <a href="#">
+          <a href="#" class="site-list__link">
             Новые поступления
           </a>
         </div>
       </li>
       <li class="site-list__item site-list__item--sale">
         <div class="site-list__container">
-          <a href="#">
+          <a href="#" class="site-list__link">
             Распродажа
           </a>
         </div>
       </li>
       <li class="site-list__item site-list__item--delivery">
         <div class="site-list__container">
-          <a href="form.html">
+          <a href="form.html" class="site-list__link">
             Бесплатная доставка по России
           </a>
         </div>
@@ -84,7 +84,9 @@
   </header>
 
     <main class="page-main page-main--noindex">
+      <div class="catalog-title">
       <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
       <div class="page-main__description">
         <p class="page-main__description-text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -225,7 +227,7 @@
         </div>
         <div class="form__bottom">
           <small class="form__legend"><sup>*</sup>Поля обязательны для заполнения</small>
-          <button type="submit" class="button-link form__send">Отправить заказ</button>
+          <button type="submit" class="button form__send">Отправить заказ</button>
         </div>
       </form>
     </main>

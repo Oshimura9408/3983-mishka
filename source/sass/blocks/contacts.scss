@@ -18,10 +18,22 @@
 .contacts__item--mail {
   text-decoration: underline;
   color: #46c1ae;
+
+  &:active {
+    color: #ecf9f7;
+  }
 }
 
 .mail-text {
   color: black;
+
+  &:hover {
+    color: #77d2c4;
+  }
+
+  &:active {
+    color: #c7ece7;
+  }
 }
 
 .contacts__text-wrapper {

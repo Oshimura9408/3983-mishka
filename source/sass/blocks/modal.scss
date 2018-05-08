@@ -77,16 +77,25 @@
   width: 82px;
   display: block;
   box-sizing: border-box;
-  border: 2px solid grey;
+  border: 2px solid #ececec;
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #444444;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 input[id="size-s"]:checked ~ .modal__label-wrapper label[for="size-s"],
 input[id="size-m"]:checked ~ .modal__label-wrapper label[for="size-m"],
 input[id="size-l"]:checked ~ .modal__label-wrapper label[for="size-l"] {
-  border-color: #63d1bb;
+  border-color: #c7c7c7;
 }
 
 .modal__button {
@@ -100,4 +109,8 @@ input[id="size-l"]:checked ~ .modal__label-wrapper label[for="size-l"] {
   border: none;
   background-color: #63d1bb;
   color: white;
+
+  &:hover {
+    background-color: #56c3b2;
+  }
 }
