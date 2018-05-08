@@ -63,7 +63,11 @@
   color: #ffffff;
   //position: relative;
   display: block;
-  width: 180px;
+  width: 175px;
+
+  &:active {
+    color: #7ed4c6;
+  }
 }
 
 .products-list_item--interior {
@@ -74,35 +78,14 @@
   position: relative;
 }
 
-.products-list_item-link--interior-icon {
+.interior-icon {
   width: 40px;
   height: 62px;
   position: absolute;
   top: -6px;
   right: -75px;
-  opacity: 0.2;
+  opacity: 0.5;
 }
-
-//.products-list_item-link--interior::before {
-//  content: "";
-//  display: block;
-//  width: 40px;
-//  height: 62px;
-//  background: url("../../img/icon-interior.svg");
-//  opacity: 0.2;
-//  position: absolute;
-//  left: 240px;
-//}
-
-//.products-list_item-link--toys::before {
-//  content: "";
-//  width: 60px;
-//  height: 60px;
-//  background: url("../../img/icon-toy.svg");
-//  opacity: 0.2;
-//  position: absolute;
-//  left: 230px;
-//}
 
 .products-list_item--toys {
   background-color: #56c3b2;
@@ -112,13 +95,13 @@
   position: relative;
 }
 
-.products-list_item-link--toys-icon {
+.toys-icon {
   width: 60px;
   height: 60px;
   position: absolute;
   top: -10px;
   right: -85px;
-  opacity: 0.2;
+  fill-opacity: 0.5;
 }
 
 .page-main__description {
@@ -138,14 +121,30 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -1px;
+      bottom: -15px;
       width: 100%;
-      height: 23px;
+      height: 34px;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: auto 23px;
+      //background-repeat: repeat-x;
+      //background-size: auto 23px;
       z-index: 50;
     }
+  }
+
+  .text-test {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 170px;
+  }
+
+  .interior-icon {
+    top: 28px;
+    right: -68px;
+  }
+
+  .toys-icon {
+    top: 30px;
+    right: -70px;
   }
 
   .products-list {
@@ -164,10 +163,23 @@
     font-weight: 700;
     color: #000000;
     text-align: center;
+    margin-bottom: 132px;
   }
 
   .products-list_item {
-    padding: 35px 15px;
+    //padding: 39px 15px;
+    padding: 0;
+
+    &:hover {
+      //padding-bottom: 30px;
+      margin-top: -5px;
+    }
+  }
+
+  .products-list_item-link {
+    //padding: 0;
+    //padding: 39px 15px;
+    padding: 26px 15px 39px 35px;
   }
 }
 
@@ -192,13 +204,19 @@
     width: 85%;
   }
 
-  .products-list_item-link--interior-icon {
-    right: 0;
+  .interior-icon {
+    right: 8px;
+    top: 32px;
   }
 
   .products__title-text {
     font-size: 53px;
     line-height: 57px;
     padding-bottom: 228px;
+  }
+
+  .toys-icon {
+    top: 32px;
+    right: 5px;
   }
 }

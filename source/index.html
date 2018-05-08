@@ -89,24 +89,20 @@
           <!--</div>-->
           <ul class="products-list">
             <li class="products-list_item products-list_item--interior">
-              <div class="products-list__container">
+              <!--<div class="products-list__container">-->
                 <a class="products-list_item-link products-list_item-link--interior" href="#">
-                  Предметы
-                  <br>
-                  интерьера
-                  <svg class="products-list_item-link--interior-icon" width="40.219px" height="62.411px"><use xlink:href="img/sprite.svg#icon-interior"></use></svg>
+                  <span class="text-test">Предметы интерьера</span>
+                  <svg class="interior-icon" width="40.219px" height="62.411px"><use xlink:href="img/sprite.svg#icon-interior"></use></svg>
                 </a>
-              </div>
+              <!--</div>-->
             </li>
             <li class="products-list_item products-list_item--toys">
-              <div class="products-list__container products-list__container--toys">
+              <!--<div class="products-list__container products-list__container&#45;&#45;toys">-->
               <a class="products-list_item-link products-list_item-link--toys" href="#">
-                Детские
-                <br>
-                игрушки
-                <svg class="products-list_item-link--toys-icon" width="60px" height="59.62px"><use xlink:href="img/sprite.svg#icon-toy"></use></svg>
+                <span class="text-test">Детские игрушки </span>
+                <svg class="toys-icon" width="60px" height="59.62px"><use xlink:href="img/sprite.svg#icon-toy"></use></svg>
               </a>
-              </div>
+              <!--</div>-->
             </li>
           </ul>
         </div>
@@ -218,7 +214,9 @@
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__email">
             <span class="contacts__item contacts__item--info">e-mail:</span>
-            <a href="#" class="contacts__item contacts__item--mail"><span class="contacts__item--mail-text">info@mimimishkashop.ru</span></a>
+            <a href="#" class="contacts__item contacts__item--mail">
+              <span class="mail-text">info@mimimishkashop.ru</span>
+            </a>
           </div>
           <div class="contacts__address">
             <span class="contacts__item contacts__item--info-address">адрес:</span>
@@ -263,7 +261,7 @@
           </li>
         </ul>
         <div class="page-footer__academy">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="about-us__link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__link">
             <span class="page-footer__develop">Разработано</span>
             <svg width="101.6" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
           </a>
@@ -272,23 +270,29 @@
     </footer>
 
     <!-- Modal-->
-    <section class="modal">
-      <h2 class="modal__title">Добавить  в корзину</h2>
-      <p class="modal__choose">Выберите размер:</p>
-      <form action="#" method="post" class="modal__form">
-        <label class="modal__item">
-          <input type="radio" class="modal__item-s">S
-        </label>
-        <label class="modal__item">
-          <input type="radio" class="modal__item-m">M
-        </label >
-        <label class="modal__item">
-          <input type="radio" class="modal__item-l">L
-        </label>
-        <button type="submit" class="modal__button-add button">Добавить</button>
+  <div class="modal">
+    <section class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__option">Выберите размер:</p>
+      <form class="modal__form" action="#" method="post">
+        <div class="modal__radio">
+          <input id="size-s" type="radio" name="radio" checked>
+          <input id="size-m" type="radio" name="radio">
+          <input id="size-l" type="radio" name="radio">
+          <div class="modal__label-wrapper">
+            <label for="size-s" class="modal__label">S</label>
+            <label for="size-m" class="modal__label">M</label>
+            <label for="size-l" class="modal__label">L</label>
+          </div>
+        </div>
+        <button class="button modal__button" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="modal__overlay"></div>
+  </div>
   <script src="js/menu.js">
+  </script>
+  <script src="js/modal.js">
   </script>
   <script defer src="js/svgxuse.js"></script>
   </body>

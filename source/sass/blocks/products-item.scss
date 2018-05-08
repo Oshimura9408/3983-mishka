@@ -61,6 +61,15 @@
   padding: 13px 33%;
   border: #444444 1px solid;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #444444;
+    color: white;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }
 
 .products-item__price {
