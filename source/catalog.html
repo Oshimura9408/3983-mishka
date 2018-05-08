@@ -91,7 +91,7 @@
     <section class="catalog">
       <div class="catalog-items">
         <article class="catalog-items__item">
-          <a href="#">
+          <a href="#" class="catalog__link">
             <!--<div class="catalog-img__wrapper">-->
             <div class="catalog__img-wrapper">
               <picture>
@@ -107,14 +107,16 @@
               <p class="catalog-items__info">Рост 30 см, вес 200 г</p>
               <!--</div>-->
               <!--<div class="catalog-items__footer">-->
-              <p class="catalog-items__price">1 200 руб.</p>
+              <p class="catalog-items__price">1 200 руб.
+              <svg width="20" height="19" class="catalog__svg-link"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              </p>
               <!--<a href="#" class="catalog-basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog-items__basket-icon"> </a>-->
             </div>
           </a>
         </article>
 
         <article class="catalog-items__item">
-          <a href="#">
+          <a href="#" class="catalog__link">
             <div class="catalog__img-wrapper">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg">
@@ -126,14 +128,16 @@
             <div class="catalog-items__description">
               <h2 class="catalog-items__title">Корзинка для белья</h2>
               <p class="catalog-items__info">Диаметр 15 см, высота 10 см</p>
-              <p class="catalog-items__price">690 руб.</p>
+              <p class="catalog-items__price">690 руб.
+                <svg width="20" height="19" class="catalog__svg-link"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              </p>
               <!--<a href="#" class="catalog-items__basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog-items__basket-icon"> </a>-->
             </div>
           </a>
         </article>
 
         <article class="catalog-items__item">
-          <a href="#">
+          <a href="#" class="catalog__link">
             <div class="catalog__img-wrapper">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg">
@@ -144,7 +148,9 @@
             <div class="catalog-items__description">
               <h2 class="catalog-items__title">Большая корзинка для игрушек</h2>
               <p class="catalog-items__info">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog-items__price">1 500 руб.</p>
+              <p class="catalog-items__price">1 500 руб.
+                <svg width="20" height="19" class="catalog__svg-link"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+              </p>
               <!--<a href="#" class="catalog-items__basket"> <img src="img/icon-cart.svg" width="20" height="19" class="catalog-items__basket-icon"> </a>-->
             </div>
           </a>
@@ -156,7 +162,7 @@
         <div class="production-process__wrapper">
           <p class="production-process__title">Процесс производства</p>
           <!--<a href="" class="production-process__play-button"> <img src="img/icon-play.svg" class="production-process__play-icon" width="101" height="77"> Play </a>-->
-          <picture>
+          <picture class="production-process__video-img">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
             <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" width="260" height="150" class="production-process__img" alt="video">

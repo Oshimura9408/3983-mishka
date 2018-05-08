@@ -76,6 +76,10 @@
 
 .products-list_item-link--interior {
   position: relative;
+
+  &:hover svg {
+    opacity: 0.5;
+  }
 }
 
 .interior-icon {
@@ -84,7 +88,7 @@
   position: absolute;
   top: -6px;
   right: -75px;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .products-list_item--toys {
@@ -93,6 +97,10 @@
 
 .products-list_item-link--toys {
   position: relative;
+
+  &:hover svg {
+    opacity: 0.7;
+  }
 }
 
 .toys-icon {
@@ -101,7 +109,7 @@
   position: absolute;
   top: -10px;
   right: -85px;
-  fill-opacity: 0.5;
+  opacity: 0.2;
 }
 
 .page-main__description {
