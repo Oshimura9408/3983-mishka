@@ -1,6 +1,6 @@
 .reviews {
   display: block;
-  background-image: url("../../img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: auto 6px;
@@ -79,7 +79,7 @@
 @media (min-width: 768px) {
   .reviews {
     padding-top: 35px;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-position: bottom;
     background-repeat: repeat-x;
     background-size: auto 17px;
@@ -93,7 +93,7 @@
     width: 668px;
     margin: 0 auto;
     position: relative;
-    background: url("../../img/review@1x.jpg") no-repeat left;
+    background: url("../img/review@1x.jpg") no-repeat left;
   }
 
   .reviews__title {

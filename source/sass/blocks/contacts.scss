@@ -59,7 +59,7 @@
   //margin: 0 auto;
   margin-bottom: 35px;
   //position: relative;
-  background: url("../../img/icon-map-pin.svg"), url("../../img/map-mobile@1x.jpg");
+  background: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: center, center;
@@ -125,7 +125,7 @@
     line-height: 50px;
     width: 100%;
     padding: 20px 0;
-    background-image: url("../../img/icon-flag.svg");
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: right;
     margin: 0;
@@ -152,7 +152,7 @@
   }
 
   .contacts__map {
-    background: url("../../img/icon-map-pin.svg"), url("../../img/map-tablet@1x.jpg");
+    background: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
     background-position: center, center;
@@ -209,7 +209,7 @@
     width: 100%;
     //padding: 25px 0;
     //padding-left: 20px;
-    background-image: url("../../img/icon-flag.svg");
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 0 30px;
     //margin-left: 63px;
@@ -241,7 +241,7 @@
 
   .contacts__map {
     width: 50%;
-    background: url("../../img/icon-map-pin.svg"), url("../../img/map-desktop@1x.jpg");
+    background: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
     background-position: center, center;
