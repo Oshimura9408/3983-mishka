@@ -2,6 +2,8 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  margin-top: 28px;
+  margin-bottom: 30px;
 }
 
 .about-us__wrapper {
@@ -17,11 +19,12 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin: 0;
 }
 
 .about-us__item {
-  padding-top: 57px;
-  padding-bottom: 30px;
+  padding-top: 58px;
+  padding-bottom: 24px;
   position: relative;
 }
 
@@ -31,67 +34,36 @@
 }
 
 .about-us svg {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   fill: #63d1bb;
 
-  path {
-    fill: #63d1bb;
-  }
+  //path {
+  //  fill: #63d1bb;
+  //}
 }
 
-//.about-us__item--eco::before {
-//  content: "";
-//  width: 32px;
-//  height: 37px;
-//  background: url("../../img/icon-feature-flower.svg");
-//  display: block;
-//}
+.text-eco {
+  width: 190px;
+}
 
-//.about-us__item--style::before {
-//  content: "";
-//  width: 47px;
-//  height: 27px;
-//  background: url("../../img/icon-feature-money.svg");
-//  display: block;
-//}
-//
-//.about-us__item--likes::before {
-//  content: "";
-//  width: 34px;
-//  height: 27px;
-//  background: url("../../img/icon-feature-heart.svg");
-//  display: block;
-//}
-//
-//.about-us__item--handmade::before {
-//  content: "";
-//  width: 35px;
-//  height: 34px;
-//  background: url("../../img/icon-feature-ball.svg");
-//  display: block;
-//}
-//
-//.about-us__item--support::before {
-//  content: "";
-//  width: 55px;
-//  height: 23px;
-//  background: url("../../img/icon-feature-rocket.svg");
-//  display: block;
-//}
-//
-//.about-us__item-giftwrap::before {
-//  content: "";
-//  width: 33px;
-//  height: 32px;
-//  background: url("../../img/icon-feature-gift.svg");
-//  display: block;
-//}
+.text-likes {
+  width: 200px;
+}
+
+.text-handmade {
+  width: 215px;
+}
+
+.text-giftwrap {
+  width: 200px;
+}
 
 @media (min-width: 768px) {
   .about-us {
-    padding-top: 10px;
+    margin-top: 50px;
   }
 
   .about-us__list {
@@ -170,19 +142,15 @@
     width: 350px;
   }
 
-  .about-us__item--eco {
-    //width: 230px;
-  }
-
-  .about-us__text--eco {
+  .text-eco {
     width: 230px;
   }
 
-  .about-us__text--giftwrap {
+  .text-giftwrap {
     width: 290px;
   }
 
-  .about-us__text--handmade {
+  .text-handmade {
     width: 290px;
   }
 }

@@ -58,6 +58,11 @@
     width: calc(100%);
   }
 
+  .site-list__container,
+  .user-list__container {
+    width: 260px;
+  }
+
   .page-header--closed .site-list {
     display: none;
   }
@@ -251,7 +256,7 @@
   }
 
   .user-list__item {
-    width: 230px;
+    width: 231px;
     font-size: 17px;
     padding: 0;
 
