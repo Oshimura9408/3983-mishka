@@ -104,8 +104,8 @@
 
 ///
 
-input:checked + label {
-  border: blue 1px solid;
+input[type="radio"]:checked + label::after {
+  display: block;
 }
 
 .form__list {
@@ -164,10 +164,46 @@ input:checked + label {
   left: 0;
   top: 0;
   border: 2px solid #444444;
+  background-color: #ffffff;
+}
+
+.form-item--radio::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 13px;
+  top: 13px;
+  background-color: #63d1bb;
+  border-radius: 50%;
+  display: none;
 }
 
 .form-item--radio::before {
   border-radius: 50%;
+}
+
+.form-item:hover::before {
+  border-color: #62d1ba;
+}
+
+.form-item--checkbox::after {
+  position: absolute;
+  content: "";
+  height: 37px;
+  width: 37px;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: calc(70%);
+  left: 10px;
+  top: 10px;
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::after {
+  display: block;
 }
 
 .form__list input[type="radio"],
@@ -465,6 +501,19 @@ input:checked + label {
     line-height: 30px;
     padding-top: 33px;
     padding-right: 43px;
+  }
+
+  .form-item--radio::after {
+    width: 22px;
+    height: 22px;
+    left: 15px;
+    top: 15px;
+  }
+
+  .form-item--checkbox::after {
+    background-size: calc(100%);
+    left: 8px;
+    top: 13px;
   }
 }
 
