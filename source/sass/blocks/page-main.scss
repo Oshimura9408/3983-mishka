@@ -3,19 +3,22 @@
 }
 
 @media (min-width: 768px) {
-  .page-main {
-    margin-top: -40px;
+  .page-main--index {
+    position: relative;
+    top: -40px;
+    //margin-top: -40px; ie
     border-top: #e7e7e7 1px solid;
   }
 
-  .page-main__no-index {
+  .page-main--noindex {
     margin-top: -41px;
   }
 }
 
 @media (min-width: 1250px) {
   .page-main {
-    margin-top: -75px;
+    top: -75px;
+    //margin-top: -75px; ie
     border-top: #e7e7e7 1px solid;
   }
 }

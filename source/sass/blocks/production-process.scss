@@ -22,7 +22,7 @@
     height: 32px;
     top: 6px;
     left: -55px;
-    background-image: url("../../img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
 }
@@ -55,7 +55,8 @@
 
 @media (min-width: 768px) {
   .production-process {
-    width: calc(87%);
+    //width: calc(87%);
+    width: 668px;
     margin: -5px auto 0 auto;
   }
 

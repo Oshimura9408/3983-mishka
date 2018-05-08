@@ -17,16 +17,16 @@
 
 .page-header__button {
   position: absolute;
-  right: 20px;
-  top: 30px;
+  right: 30px;
+  top: 29px;
   width: 21px;
   height: 21px;
-  background: #ffffff url("../../img/icon-menu-close.svg") no-repeat center;
+  background: #ffffff url("../img/icon-menu-close.svg") no-repeat center;
   border: none;
   font-size: 0;
 
   &--closed {
-    background: #ffffff url("../../img/icon-menu-open.svg") no-repeat center;
+    background: #ffffff url("../img/icon-menu-open.svg") no-repeat center;
     //width: 20px;
     //height: 14px;
   }
