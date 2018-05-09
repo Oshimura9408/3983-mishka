@@ -12,7 +12,9 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
     "gulp-sass": "4.0.x",
+    "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
@@ -22,7 +24,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
+    "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
   "browserslist": [
@@ -44,6 +46,7 @@
   "dependencies": {
     "del": "^3.0.0",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "svgstore": "^2.0.3"
   }
 }

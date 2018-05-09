@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var minifycss = require("gulp-csso");
 var minjs = require("gulp-uglify");
