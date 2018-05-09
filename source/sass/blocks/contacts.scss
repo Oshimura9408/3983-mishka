@@ -16,7 +16,6 @@
 }
 
 .contacts__item--mail {
-  text-decoration: underline;
   color: #46c1ae;
 
   &:active {
@@ -26,6 +25,8 @@
 
 .mail-text {
   color: black;
+  border-bottom: 1px solid #63d1bb;
+  padding-bottom: 5px;
 
   &:hover {
     color: #77d2c4;
@@ -64,6 +65,7 @@
 
 .contacts__item--address {
   width: 60%;
+  margin-left: 3px;
 }
 
 .contacts__map {
@@ -110,9 +112,12 @@
   display: block;
   max-width: 258px;
   text-align: center;
-  padding: 11px 0;
+  padding: 15px 0;
   margin: 0 auto;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .contacts {

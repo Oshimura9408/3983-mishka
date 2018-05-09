@@ -26,6 +26,40 @@
   padding-top: 58px;
   padding-bottom: 24px;
   position: relative;
+
+  &:first-child svg {
+    top: 2px;
+    left: 7px;
+  }
+
+  &:nth-child(2) svg {
+    top: 4px;
+    left: 1px;
+  }
+
+  &:nth-child(3) svg {
+    top: 10px;
+    left: 8px;
+  }
+
+  &:nth-child(4) svg {
+    top: 8px;
+    left: 4px;
+  }
+
+  &:nth-child(5) {
+    padding-top: 60px;
+
+    svg {
+      top: 10px;
+      left: -5px;
+    }
+  }
+
+  &:nth-child(6) svg {
+    top: 8px;
+    left: 3px;
+  }
 }
 
 .about-us {
@@ -39,10 +73,6 @@
   top: 0;
   left: 0;
   fill: #63d1bb;
-
-  //path {
-  //  fill: #63d1bb;
-  //}
 }
 
 .text-eco {
@@ -89,37 +119,76 @@
     &:nth-child(1) {
       order: 1;
       padding-bottom: 60px;
+      padding-top: 53px;
+
+      svg {
+        top: 0;
+        left: 10px;
+      }
     }
 
     &:nth-child(2) {
       order: 3;
       padding-bottom: 50px;
+      padding-top: 51px;
+
+      svg {
+        top: -2px;
+        left: 1px;
+      }
     }
 
     &:nth-child(3) {
+      padding-top: 61px;
       order: 5;
+
+      svg {
+        top: 13px;
+        left: 10px;
+      }
     }
 
     &:nth-child(4) {
+      padding-top: 53px;
       order: 2;
+
+      svg {
+        top: 2px;
+        left: 4px;
+      }
     }
 
     &:nth-child(5) {
+      padding-top: 52px;
       order: 4;
+
+      svg {
+        top: 2px;
+        left: -5px;
+      }
     }
 
     &:nth-child(6) {
+      padding-top: 61px;
       order: 6;
     }
   }
 
   .about-us__wrapper {
-    width: 669px;
+    width: 668px;
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .text-eco {
+    width: 205px;
+  }
+
+  .text-handmade {
+    width: 250px;
   }
 }
 
