@@ -84,7 +84,7 @@
   </header>
 
     <main class="page-main page-main--noindex">
-      <div class="catalog-title">
+      <div class="form-title">
       <h1 class="page-main__title">Вязание на заказ</h1>
       </div>
       <div class="page-main__description">
@@ -135,7 +135,7 @@
             <li class="list-item">
               <input type="checkbox" class="visually-hidden" id="checkbox3">
               <label class="form-item form-item--checkbox" for="checkbox3">
-                Тиффани
+                «Тиффани»
               </label>
             </li>
             <li class="list-item">
@@ -170,21 +170,21 @@
               <label class="form__user-name">
                 Имя:
               </label>
-              <input type="text" class="user-info__input" placeholder="Введите ваше имя*">
+              <input type="text" placeholder="Введите ваше имя*">
 
             </li>
             <li class="list-item">
               <label class="form__user-last-name">
                 Фамилия:
               </label>
-              <input type="text" class="user-info__input" placeholder="Укажите фамилию*">
+              <input type="text" placeholder="Укажите фамилию*">
 
             </li>
             <li class="list-item">
               <label class="form__user-patronymic">
                 Отчество:
               </label>
-              <input type="text" class="user-info__input" placeholder="Отчество, если желаете">
+              <input type="text" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </div>
@@ -199,6 +199,7 @@
             </label>
             <div class="form__item-wrapper">
               <input type="tel" placeholder="+7 XXX XX XX*">
+              <svg width="24.829px" height="24.333px" class="form__icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </div>
           </div>
 
@@ -211,6 +212,7 @@
             </label>
             <div class="form__item-wrapper">
               <input type="email" id="email" placeholder="Ваш Email*">
+              <svg width="32px" height="32px" class="form__icon-mail"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
             </div>
           </div>
         </div>
@@ -267,5 +269,7 @@
   <script src="js/menu.js">
 
   </script>
+  <script defer src="js/svgxuse.js"></script>
+  <script src="js/picturefill.js"></script>
   </body>
 </html>

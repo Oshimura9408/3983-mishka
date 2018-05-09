@@ -91,13 +91,15 @@
 
 @media (min-width: 768px) {
   .reviews {
+    width: 768px;
     padding-top: 35px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-position: bottom;
     background-repeat: repeat-x;
     background-size: auto 17px;
-    padding-bottom: 80px;
+    padding-bottom: 105px;
     z-index: 200;
+    margin: 0 auto;
   }
 
   .reviews__container {
@@ -106,12 +108,27 @@
     width: 668px;
     margin: 0 auto;
     position: relative;
-    background: url("../img/review@1x.jpg") no-repeat left;
+    margin-right: 51px;
+    //background: url("../img/review@1x.jpg") no-repeat left;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 25px;
+      left: -50px;
+      width: 350px;
+      min-height: 457px;
+      background-image: url("../img/review@1x.jpg");
+      background-color: #f3f3f3;
+    }
   }
 
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 58px;
   }
 
   .reviews__user-review {
@@ -123,7 +140,7 @@
 
   .reviews__user-name {
     margin: 0;
-    margin-top: 56px;
+    margin-top: 62px;
     margin-bottom: 8px;
     font-weight: 700;
     font-size: 18px;
@@ -136,8 +153,8 @@
 
   .reviews__control {
     position: absolute;
-    right: -43px;
-    bottom: 30px;
+    right: -10px;
+    bottom: 29px;
     //border: red 1px solid; !!
     border: none;
   }
@@ -148,6 +165,10 @@
 
     &--next {
       margin: 0;
+    }
+
+    svg {
+      padding-right: 23px;
     }
   }
 
@@ -164,13 +185,22 @@
     width: 176px;
     top: 80px;
     right: 0;
+    margin-top: 25px;
+    margin-left: 0;
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: 1250px) {
   .reviews {
-    padding-top: 60px;
-    padding-bottom: 90px;
+    padding-top: 42px;
+    padding-bottom: 105px;
+    width: 1050px;
+  }
+
+  .reviews__container::before {
+    left: 0;
   }
 
   .reviews__title {
@@ -178,7 +208,7 @@
     line-height: 57px;
     margin: 0;
     margin-left: 170px;
-    padding-top: 19px;
+    padding-top: 45px;
   }
 
   .reviews__container {
@@ -195,6 +225,7 @@
 
   .reviews__user-name {
     margin-left: 175px;
+    margin-top: 43px;
   }
 
   .reviews__user-nickname {
@@ -203,7 +234,7 @@
 
   .reviews__control {
     position: absolute;
-    right: -42px;
-    bottom: 99px;
+    right: -9px;
+    bottom: 84px;
   }
 }

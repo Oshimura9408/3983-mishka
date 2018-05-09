@@ -103,7 +103,7 @@
             </div>
             <!--<div class="catalog-items__wrapper">-->
             <div class="catalog-items__description">
-              <h2 class="catalog-items__title">Зайчик попрыгайчик</h2>
+              <h2 class="catalog-items__title">Зайчик-попрыгайчик</h2>
               <p class="catalog-items__info">Рост 30 см, вес 200 г</p>
               <!--</div>-->
               <!--<div class="catalog-items__footer">-->
@@ -160,13 +160,17 @@
 
       <section class="production-process">
         <div class="production-process__wrapper">
-          <p class="production-process__title">Процесс производства</p>
+          <p class="production-process__title">Процесс производства
+            <svg width="32px" height="32px"><use xlink:href="img/sprite.svg#icon-video"></use></svg>
+          </p>
+
           <!--<a href="" class="production-process__play-button"> <img src="img/icon-play.svg" class="production-process__play-icon" width="101" height="77"> Play </a>-->
           <picture class="production-process__video-img">
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
             <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" width="260" height="150" class="production-process__img" alt="video">
           </picture>
+          <a href="" class="production-process__icon-play"></a>
 
           <p class="production-process__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         </div>
@@ -208,24 +212,31 @@
     </div>
   </footer>
   <!-- Modal-->
-  <section class="modal">
-    <h2 class="modal__title">Добавить  в корзину</h2>
-    <p class="modal__choose">Выберите размер:</p>
-    <form action="#" method="post" class="modal__form">
-      <label class="modal__item">
-        <input type="radio" class="modal__item-s">S
-      </label>
-      <label class="modal__item">
-        <input type="radio" class="modal__item-m">M
-      </label >
-      <label class="modal__item">
-        <input type="radio" class="modal__item-l">L
-      </label>
-      <button type="submit" class="modal__button-add button">Добавить</button>
-    </form>
-  </section>
+  <div class="modal">
+    <section class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__option">Выберите размер:</p>
+      <form class="modal__form" action="#" method="post">
+        <div class="modal__radio">
+          <input id="size-s" type="radio" name="radio" checked>
+          <input id="size-m" type="radio" name="radio">
+          <input id="size-l" type="radio" name="radio">
+          <div class="modal__label-wrapper">
+            <label for="size-s" class="modal__label">S</label>
+            <label for="size-m" class="modal__label">M</label>
+            <label for="size-l" class="modal__label">L</label>
+          </div>
+        </div>
+        <button class="button modal__button" type="submit">Добавить</button>
+      </form>
+    </section>
+    <div class="modal__overlay"></div>
+  </div>
   <script src="js/menu.js">
-
   </script>
+  <script src="js/modal.js">
+  </script>
+  <script defer src="js/svgxuse.js"></script>
+  <script src="js/picturefill.js"></script>
   </body>
 </html>

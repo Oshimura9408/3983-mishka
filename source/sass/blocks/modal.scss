@@ -5,7 +5,7 @@
   min-width: 320px;
   min-height: 311px;
   top: calc(35%);
-  z-index: 100;
+  z-index: 300;
 
   &--opened {
     display: block;
@@ -112,5 +112,45 @@ input[id="size-l"]:checked ~ .modal__label-wrapper label[for="size-l"] {
 
   &:hover {
     background-color: #56c3b2;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    min-height: 336px;
+  }
+
+  .modal__wrapper {
+    width: 566px;
+  }
+
+  .modal__form {
+    width: 350px;
+  }
+
+  .modal__title {
+    width: 360px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__label {
+    width: 112px;
+
+    &:hover {
+      border-color: #c7c7c7;
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
+  }
+
+  .modal__option {
+    font-size: 17px;
+  }
+
+  .modal__button {
+    width: 350px;
   }
 }
