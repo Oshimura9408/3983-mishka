@@ -33,7 +33,8 @@
   width: 17px;
   height: 17px;
   opacity: 0.2;
-  position: absolute;
+  //position: absolute; ie
+  position: relative;
 }
 
 .user-list__cart-icon {
@@ -65,6 +66,11 @@
 
   &:active {
     color: #b2b2b2;
+
+    svg {
+      opacity: 1;
+      fill: #d0f1ea;
+    }
   }
 }
 
@@ -87,6 +93,20 @@
   .site-list__container,
   .user-list__container {
     width: 260px;
+  }
+
+  .page-header--nojs {
+    .site-list {
+      display: block;
+    }
+
+    .user-list {
+      display: block;
+    }
+
+    .page-header__button {
+      display: none;
+    }
   }
 
   .page-header--closed .site-list {
@@ -226,12 +246,14 @@
   }
 
   .user-list__search-icon {
-    top: -8px;
+    //top: -8px;
+    top: 3px;
     left: -13px;
     width: 17px;
     height: 17px;
     opacity: 0.2;
-    position: absolute;
+    //position: absolute;
+    position: relative;
   }
 }
 
@@ -305,7 +327,8 @@
   }
 
   .user-list__search-icon {
-    top: 25px;
+    //top: 25px;
+    top: 37px;
   }
 
   .user-list__item--delivery .user-list__container {

@@ -249,7 +249,9 @@
   }
 
   .products-item__pic {
-    margin-top: -111px;
+    //margin-top: -111px; ie
+    position: relative;
+    top: -168px;
   }
 
   .products-item__name {
