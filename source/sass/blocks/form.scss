@@ -77,25 +77,25 @@
     }
   }
 
-  &--wishes {
-    //margin-top: -22px;
-    margin-bottom: 0;
-
-    .form__item-wrapper {
-      margin-top: 24px;
-    }
-
-    textarea {
-      min-height: 123px;
-      border: 2px solid black;
-      padding-left: 15px;
-      padding-top: 13px;
-
-      &:hover {
-        border-color: #63d1bb;
-      }
-    }
-  }
+  //&--wishes {
+  //  //margin-top: -22px;
+  //  margin-bottom: 0;
+  //
+  //  .form__item-wrapper {
+  //    margin-top: 24px;
+  //  }
+  //
+  //  textarea {
+  //    min-height: 123px;
+  //    border: 2px solid black;
+  //    padding-left: 15px;
+  //    padding-top: 13px;
+  //
+  //    &:hover {
+  //      border-color: #63d1bb;
+  //    }
+  //  }
+  //}
 }
 
 ///
@@ -425,6 +425,24 @@ textarea::placeholder {
 }
 
 .form__div--wishes {
+  //margin-top: -22px;
+  margin-bottom: 0;
+
+  .form__item-wrapper {
+    margin-top: 24px;
+  }
+
+  textarea {
+    min-height: 123px;
+    border: 2px solid black;
+    padding-left: 15px;
+    padding-top: 13px;
+
+    &:hover {
+      border-color: #63d1bb;
+    }
+  }
+
   .form__title {
     margin-top: 33px;
   }
@@ -453,10 +471,10 @@ textarea::placeholder {
     }
   }
 
-  .form-item {
-    padding-left: 78px;
-    padding-top: 12px;
-  }
+  //.form-item {
+  //  padding-left: 78px;
+  //  padding-top: 12px;
+  //}
 
   .form__list--checkbox li {
     padding-bottom: 12px;
@@ -551,6 +569,8 @@ textarea::placeholder {
 
   .form-item {
     font-size: 19px;
+    padding-left: 78px;
+    padding-top: 12px;
   }
 
   .form-item::before {
