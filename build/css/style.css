@@ -417,7 +417,8 @@
   .mail-text:hover {
     color: #77d2c4; }
   .mail-text:active {
-    color: #c7ece7; }
+    opacity: 0.3;
+    border-bottom: 1px solid #ecf9f7; }
 
 .contacts__text-wrapper {
   width: 260px;
@@ -1847,7 +1848,7 @@ a {
   width: 17px;
   height: 17px;
   opacity: 0.2;
-  position: relative; }
+  position: absolute; }
 
 .user-list__cart-icon {
   top: 0;
