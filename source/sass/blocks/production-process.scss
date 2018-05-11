@@ -4,6 +4,7 @@
   box-sizing: border-box;
   border: #ededed 1px solid;
   margin-bottom: 60px;
+  position: relative;
 }
 
 .production-process__wrapper {
@@ -15,15 +16,14 @@
   position: relative;
   margin-left: auto;
 
-  &::before {
+  svg {
     position: absolute;
     content: "";
     width: 32px;
     height: 32px;
     top: 6px;
     left: -55px;
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
+    fill: #63d1bb;
   }
 }
 
@@ -53,11 +53,59 @@
   text-align: center;
 }
 
+.production-process__video-img {
+  position: relative;
+}
+
+.production-process__icon-play {
+  position: absolute;
+  content: "";
+  width: 121px; //121
+  height: 92px; //92
+  left: 128px;
+  top: 167px;
+  margin-left: -50px;
+  margin-top: -35px;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+}
+
 @media (min-width: 768px) {
+  .production-process__icon-play {
+    left: 332px;
+    top: 224px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      opacity: 0.6;
+      transform: scale(0.8);
+    }
+  }
+
+  .production-process__title::before {
+    top: -5px;
+    left: -65px;
+    fill: #63d1bb;
+  }
+
   .production-process {
     //width: calc(87%);
     width: 668px;
     margin: -5px auto 0 auto;
+    margin-bottom: 65px;
   }
 
   .production-process__wrapper {
@@ -76,8 +124,13 @@
     font-size: 20px;
     width: 250px;
     margin-left: calc(15.7%);
-    margin-top: 40px;
+    margin-top: 34px;
     order: 2;
+
+    svg {
+      top: -4px;
+      left: -64px;
+    }
   }
 
   .production-process__content {
@@ -114,8 +167,8 @@
     margin-top: 95px;
     order: 2;
 
-    &::before {
-      top: -53px;
+    svg {
+      top: -54px;
       left: 43px;
     }
   }
@@ -129,7 +182,7 @@
   .production-process__content {
     margin-left: calc(72.4%);
     width: 288px;
-    margin-top: -280px;
+    margin-top: -288px;
     order: 3;
   }
 
@@ -138,5 +191,20 @@
     right: calc(5.4%);
     bottom: 16px;
     width: calc(21.9%);
+    margin-bottom: 54px;
+  }
+
+  .production-process__icon-play {
+    left: 340px;
+    top: 220px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      opacity: 0.6;
+      transform: scale(0.8);
+    }
   }
 }

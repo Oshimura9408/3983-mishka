@@ -52,6 +52,32 @@
   padding-left: 45px;
 }
 
+.site-list__link,
+.user-list__link {
+  &:hover {
+    color: #7a7a7a;
+
+    svg {
+      opacity: 1;
+      fill: #63d1bb;
+    }
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
+.page-header__logo-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
 @media (max-width: 767px) {
   .site-list,
   .user-list {
@@ -150,9 +176,10 @@
     flex-wrap: wrap;
     width: 470px;
     margin: 0;
-    margin-left: auto;
+    //margin-left: auto;
     //margin-top: -162px;
     order: 2;
+    margin-left: 30px;
   }
 
   .user-list__item {

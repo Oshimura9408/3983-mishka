@@ -2,6 +2,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 16px;
 }
 
 .contacts__item {
@@ -16,12 +17,25 @@
 }
 
 .contacts__item--mail {
-  text-decoration: underline;
   color: #46c1ae;
+
+  &:active {
+    color: #ecf9f7;
+  }
 }
 
-.contacts__item--mail-text {
+.mail-text {
   color: black;
+  border-bottom: 1px solid #63d1bb;
+  padding-bottom: 5px;
+
+  &:hover {
+    color: #77d2c4;
+  }
+
+  &:active {
+    color: #c7ece7;
+  }
 }
 
 .contacts__text-wrapper {
@@ -29,7 +43,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 .contacts__email {
@@ -52,6 +66,7 @@
 
 .contacts__item--address {
   width: 60%;
+  margin-left: 3px;
 }
 
 .contacts__map {
@@ -64,10 +79,10 @@
   background-size: auto, cover;
   background-position: center, center;
   //height: 457px;
-  margin-top: 25px;
   position: relative;
   display: flex;
   justify-content: space-around;
+  margin-top: 35px;
 }
 
 //.map-img {
@@ -98,9 +113,12 @@
   display: block;
   max-width: 258px;
   text-align: center;
-  padding: 11px 0;
+  padding: 15px 0;
   margin: 0 auto;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .contacts {
@@ -129,7 +147,7 @@
     background-repeat: no-repeat;
     background-position: right;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .contacts__item {
@@ -138,11 +156,15 @@
   }
 
   .contacts__item--info {
-    width: 24%;
+    width: 23%;
   }
 
   .contacts__item--info-address {
-    width: 25%;
+    width: 22%;
+  }
+
+  .contacts__item--address {
+    width: 70%;
   }
 
   .contacts__email,
@@ -211,10 +233,10 @@
     //padding-left: 20px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 0 30px;
+    background-position: 0 10px;
     //margin-left: 63px;
-    margin-top: 110px;
-    padding-top: 27px;
+    margin-top: 125px;
+    padding-top: 16px;
     padding-bottom: 0;
     padding-left: 105px;
     margin-left: 64px;
@@ -227,8 +249,12 @@
   }
 
   .contacts__address {
-    margin-bottom: 120px;
-    padding-top: 16px;
+    margin-bottom: 145px;
+  }
+
+  .contacts__item--address {
+    width: 68%;
+    margin: 0;
   }
 
   .contacts__item--info {
@@ -250,10 +276,9 @@
   }
 
   .contacts__button {
-    margin: 0 0 0 35px;
     width: 228px;
     position: absolute;
-    bottom: 28px;
-    left: 149px;
+    bottom: 40px;
+    left: 175px;
   }
 }

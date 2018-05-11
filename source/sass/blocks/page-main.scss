@@ -11,7 +11,9 @@
   }
 
   .page-main--noindex {
-    margin-top: -41px;
+    position: relative;
+    top: -40px;
+    //margin-top: -41px; ie
   }
 }
 

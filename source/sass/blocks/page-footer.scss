@@ -12,7 +12,7 @@
   padding: 0;
   margin: 23px auto 0 auto;
   border-bottom: #e5e5e5 1px solid;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .footer_social-item--fb {
@@ -38,7 +38,7 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-  padding-right: 18px;
+  padding-right: 25px;
 }
 
 .page-footer__develop-logo {
@@ -62,15 +62,45 @@
   display: none;
 }
 
-.about-us__link {
+.page-footer__link {
   display: flex;
   align-items: center;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    color: #a8a8a8;
+
+    svg {
+      fill: #bde3dd;
+    }
+  }
+}
+
+.page-footer__social-link svg {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
 }
 
 @media (min-width: 768px) {
   .page-footer__logo {
     display: block;
     width: 27%;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
   }
 
   .page-footer__wrapper {
@@ -81,19 +111,22 @@
     //justify-content: space-between;
     padding: 52px 50px;
     margin: 0 auto;
+    padding-top: 37px;
   }
 
   .page-footer__social-list {
     margin: 0;
     border: none;
     width: 27%;
-    padding-left: 60px;
+    padding-top: 7px;
+    padding-left: 77px;
   }
 
   .page-footer__academy {
     width: 28%;
     padding: 0;
     padding-left: 68px;
+    padding-top: 4px;
   }
 }
 
@@ -101,6 +134,7 @@
   .page-footer__wrapper {
     width: 1050px;
     margin: 0 auto;
+    padding: 45px 50px;
   }
 
   .page-footer__social-list {

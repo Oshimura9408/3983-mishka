@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: auto 6px;
-  padding-bottom: 55px;
-  z-index: 200;
+  //background-image: url("../img/bg-zigzag-line.svg");
+  //background-position: bottom;
+  //background-repeat: repeat-x;
+  //background-size: auto 6px;
+  //padding-bottom: 55px;
+  //z-index: 200;
 }
 
 @media (min-width: 768px) {
@@ -20,17 +20,17 @@
     //background-repeat: repeat-x;
     //background-size: auto 23px;
     //z-index: 50;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: auto 17px;
-    padding-bottom: 60px;
-    z-index: 200;
+    //background-image: url("../img/bg-zigzag-line.svg");
+    //background-position: bottom;
+    //background-repeat: repeat-x;
+    //background-size: auto 17px;
+    padding-bottom: 0;
+    //z-index: 200;
   }
 }
 
 @media (min-width: 1250px) {
   .products {
-    padding-bottom: 90px;
+    padding-bottom: 5px;
   }
 }
