@@ -34,7 +34,8 @@
   }
 
   &:active {
-    color: #c7ece7;
+    opacity: 0.3;
+    border-bottom: 1px solid #ecf9f7;
   }
 }
 
