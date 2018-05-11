@@ -66,6 +66,11 @@
 
   &:active {
     color: #b2b2b2;
+
+    svg {
+      opacity: 1;
+      fill: #d0f1ea;
+    }
   }
 }
 

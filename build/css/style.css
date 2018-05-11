@@ -1873,6 +1873,10 @@ a {
 .site-list__link:active,
 .user-list__link:active {
   color: #b2b2b2; }
+  .site-list__link:active svg,
+  .user-list__link:active svg {
+    opacity: 1;
+    fill: #d0f1ea; }
 
 .page-header__logo-link:hover {
   opacity: 0.6; }
@@ -2506,7 +2510,7 @@ a {
         padding-top: 20px;
         width: 231px; }
     .user-list--noindex .user-list__search-icon {
-      top: 25px; }
+      top: 37px; }
     .user-list--noindex .user-list__item--delivery .user-list__container {
       padding-left: 0; } }
 
