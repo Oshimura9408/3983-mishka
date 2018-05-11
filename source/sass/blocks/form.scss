@@ -207,6 +207,10 @@ input[type="radio"]:checked + label::after {
   border-color: #d6d6d6;
 }
 
+.form-item--checkbox::before {
+  background-color: #f1f1f1;
+}
+
 .form-item--checkbox::after {
   position: absolute;
   content: "";
@@ -317,12 +321,14 @@ input[type="email"]::placeholder {
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  opacity: 0.3;
 }
 
 textarea::placeholder {
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  opacity: 0.3;
 }
 
 .form__user-name {
@@ -723,6 +729,11 @@ textarea::placeholder {
 
   .form__icon-mail {
     right: 22px;
+  }
+
+  textarea::placeholder {
+    font-size: 19px;
+    line-height: 18px;
   }
 }
 

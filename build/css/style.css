@@ -1084,6 +1084,9 @@ input[type="radio"]:checked + label::after {
 .form-item:active::before {
   border-color: #d6d6d6; }
 
+.form-item--checkbox::before {
+  background-color: #f1f1f1; }
+
 .form-item--checkbox::after {
   position: absolute;
   content: "";
@@ -1169,48 +1172,56 @@ input[type="tel"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 input[type="text"]:-ms-input-placeholder,
 input[type="tel"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 input[type="text"]::-ms-input-placeholder,
 input[type="tel"]::-ms-input-placeholder,
 input[type="email"]::-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 input[type="text"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="email"]::placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 textarea::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 textarea:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 textarea::-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 textarea::placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.3; }
 
 .form__user-name {
   display: -webkit-box;
@@ -1493,7 +1504,19 @@ textarea::placeholder {
   .form__icon-phone {
     right: 26px; }
   .form__icon-mail {
-    right: 22px; } }
+    right: 22px; }
+  textarea::-webkit-input-placeholder {
+    font-size: 19px;
+    line-height: 18px; }
+  textarea:-ms-input-placeholder {
+    font-size: 19px;
+    line-height: 18px; }
+  textarea::-ms-input-placeholder {
+    font-size: 19px;
+    line-height: 18px; }
+  textarea::placeholder {
+    font-size: 19px;
+    line-height: 18px; } }
 
 @media (min-width: 1150px) {
   .page-main__description {
