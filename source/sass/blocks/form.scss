@@ -116,7 +116,7 @@ input[type="radio"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 11px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
     font-size: 100%;
 
     &:hover {
@@ -128,7 +128,7 @@ input[type="radio"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
 
     &:hover {
       border-color: #63d1bb;
@@ -139,7 +139,7 @@ input[type="radio"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
 
     &:hover {
       border-color: #63d1bb;
@@ -275,14 +275,14 @@ input[type="checkbox"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
   }
 
   input[type="tel"] {
     padding-top: 28px;
     padding-bottom: 17px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
 
     &:hover {
       border-color: #63d1bb;
@@ -298,7 +298,7 @@ input[type="checkbox"]:checked + label::after {
     padding-top: 25px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
 
     &:hover {
       border-color: #63d1bb;
@@ -317,12 +317,14 @@ input[type="email"]::placeholder {
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  opacity: 0.4;
 }
 
 textarea::placeholder {
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+  opacity: 0.4;
 }
 
 .form__user-name {
@@ -747,6 +749,11 @@ textarea::placeholder {
   //    }
   //  }
   //}
+
+  textarea::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -760,7 +767,7 @@ textarea::placeholder {
   }
 
   .form__list {
-    width: 80%;
+    width: 78%;
   }
 
   .form__title {

@@ -1039,7 +1039,7 @@ input[type="radio"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 11px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #444444;
     font-size: 100%; }
     .form__list input[type="text"]:hover {
       border-color: #63d1bb; }
@@ -1047,14 +1047,14 @@ input[type="radio"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid #444444; }
     .form__list input[type="tel"]:hover {
       border-color: #63d1bb; }
   .form__list input[type="email"] {
     padding-top: 18px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid #444444; }
     .form__list input[type="email"]:hover {
       border-color: #63d1bb; }
 
@@ -1172,12 +1172,12 @@ input[type="checkbox"]:checked + label::after {
     padding-top: 18px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid #444444; }
   .form__item-wrapper input[type="tel"] {
     padding-top: 28px;
     padding-bottom: 17px;
     border: none;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid #444444; }
     .form__item-wrapper input[type="tel"]:hover {
       border-color: #63d1bb; }
       .form__item-wrapper input[type="tel"]:hover + .form__icon-phone {
@@ -1187,7 +1187,7 @@ input[type="checkbox"]:checked + label::after {
     padding-top: 25px;
     padding-bottom: 16px;
     border: none;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid #444444; }
     .form__item-wrapper input[type="email"]:hover {
       border-color: #63d1bb; }
       .form__item-wrapper input[type="email"]:hover + .form__icon-mail {
@@ -1199,48 +1199,56 @@ input[type="tel"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 input[type="text"]:-ms-input-placeholder,
 input[type="tel"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 input[type="text"]::-ms-input-placeholder,
 input[type="tel"]::-ms-input-placeholder,
 input[type="email"]::-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 input[type="text"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="email"]::placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 textarea::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 textarea:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 textarea::-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 textarea::placeholder {
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.4; }
 
 .form__user-name {
   display: -webkit-box;
@@ -1532,7 +1540,19 @@ textarea::placeholder {
     right: 34px; }
   .form__icon-mail {
     right: 30px;
-    top: 11px; } }
+    top: 11px; }
+  textarea::-webkit-input-placeholder {
+    font-size: 19px;
+    line-height: 18px; }
+  textarea:-ms-input-placeholder {
+    font-size: 19px;
+    line-height: 18px; }
+  textarea::-ms-input-placeholder {
+    font-size: 19px;
+    line-height: 18px; }
+  textarea::placeholder {
+    font-size: 19px;
+    line-height: 18px; } }
 
 @media (min-width: 1150px) {
   .page-main__description {
@@ -1541,7 +1561,7 @@ textarea::placeholder {
   .form__title__wrapper {
     width: 15%; }
   .form__list {
-    width: 80%; }
+    width: 78%; }
   .form__title {
     padding-left: 57px;
     margin-top: 16px; }
@@ -2307,6 +2327,12 @@ a {
   border: #ededed 1px solid;
   margin-bottom: 60px;
   position: relative; }
+  .production-process:hover {
+    -webkit-box-shadow: 0 5px 12px 0 #ececec;
+            box-shadow: 0 5px 12px 0 #ececec; }
+  .production-process:active {
+    -webkit-box-shadow: 0 5px 2px 0 #ececec;
+            box-shadow: 0 5px 2px 0 #ececec; }
 
 .production-process__wrapper {
   margin-top: 24px; }

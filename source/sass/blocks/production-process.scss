@@ -5,6 +5,14 @@
   border: #ededed 1px solid;
   margin-bottom: 60px;
   position: relative;
+
+  &:hover {
+    box-shadow: 0 5px 12px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 5px 2px 0 #ececec;
+  }
 }
 
 .production-process__wrapper {
