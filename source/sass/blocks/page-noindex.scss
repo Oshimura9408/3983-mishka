@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .page-footer--noindex {
+    margin-top: -56px;
+  }
+}
+
 @media (min-width: 1150px) {
   .page-main--noindex {
     //margin-top: -75px;
@@ -149,16 +155,7 @@
     }
   }
 
-  //.page-footer__social-list {
-  //  width: 204px;
-  //}
-  //
-  //.page-footer__logo {
-  //  width: 45%;
-  //}
-  //
-  //.page-footer__academy {
-  //  width: 20%;
-  //  padding-left: 240px;
-  //}
+  .page-footer--noindex {
+    margin-top: -79px;
+  }
 }

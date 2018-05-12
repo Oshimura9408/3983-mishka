@@ -93,8 +93,13 @@
   border: #ededed 1px solid;
 }
 
-.catalog__svg-link:hover {
-  fill: #63d1bb;
+.catalog__svg-link {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
 
   &:active {
     fill: #d0f1ea;

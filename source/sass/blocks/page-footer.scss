@@ -111,22 +111,24 @@
     //justify-content: space-between;
     padding: 52px 50px;
     margin: 0 auto;
-    padding-top: 37px;
+    padding-bottom: 30px;
+    padding-top: 54px;
   }
 
   .page-footer__social-list {
     margin: 0;
     border: none;
-    width: 27%;
+    width: 28%;
     padding-top: 7px;
     padding-left: 77px;
   }
 
   .page-footer__academy {
-    width: 28%;
+    width: 27%;
     padding: 0;
     padding-left: 68px;
     padding-top: 4px;
+    padding-right: 2px;
   }
 }
 
@@ -140,7 +142,8 @@
   .page-footer__social-list {
     width: 18%;
     padding: 0;
-    margin-left: 249px;
+    margin-top: 6px;
+    margin-left: 241px;
   }
 
   .page-footer__logo {
@@ -148,8 +151,9 @@
   }
 
   .page-footer__academy {
-    width: 18%;
+    width: 17%;
     padding: 0;
-    margin-left: 234px;
+    margin-left: 247px;
+    margin-top: 2px;
   }
 }

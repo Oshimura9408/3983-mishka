@@ -1,11 +1,18 @@
 .reviews {
   display: block;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: auto 6px;
-  padding-bottom: 50px;
-  z-index: 200;
+  width: 260px;
+  margin: 0 auto;
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+    padding-bottom: 50px;
+    z-index: 200;
+  }
 }
 
 .reviews__container {
@@ -48,26 +55,23 @@
 }
 
 .reviews__button {
-  //width: 50px;
-  //height: 26px;
-  //font-size: 0;
-  //background: #ffffff url("../../img/icon-left-arrow.svg") no-repeat center;
-  //border: none;
-  //margin-right: 80px;
   width: calc(100%);
   background-color: #ffffff;
   border: #ececec 1px solid;
   min-height: 52px;
   cursor: pointer;
 
-  &--next {
-    //background: #ffffff url("../../img/icon-right-arrow.svg") no-repeat center;
-    //margin: 0;
-  }
-
   svg {
     padding-top: 2px;
     padding-right: 8px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -93,13 +97,18 @@
   .reviews {
     width: 768px;
     padding-top: 35px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: auto 17px;
-    padding-bottom: 80px;
-    z-index: 200;
-    margin: 0 auto;
+    //background-image: url("../img/bg-zigzag-line.svg");
+    //background-position: bottom;
+    //background-repeat: repeat-x;
+    //background-size: auto 17px;
+
+    //z-index: 200;
+    //margin: 0 auto;
+
+    &::after {
+      background-size: auto 17px;
+      padding-bottom: 105px;
+    }
   }
 
   .reviews__container {
@@ -195,7 +204,6 @@
 @media (min-width: 1250px) {
   .reviews {
     padding-top: 42px;
-    padding-bottom: 105px;
     width: 1050px;
   }
 
@@ -225,7 +233,7 @@
 
   .reviews__user-name {
     margin-left: 175px;
-    margin-top: 43px;
+    margin-top: 40px;
   }
 
   .reviews__user-nickname {
