@@ -5,6 +5,14 @@
   border: #ededed 1px solid;
   margin-bottom: 60px;
   position: relative;
+
+  &:hover {
+    box-shadow: 0 5px 12px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 5px 2px 0 #ececec;
+  }
 }
 
 .production-process__wrapper {
@@ -55,6 +63,7 @@
 
 .production-process__video-img {
   position: relative;
+  line-height: 0;
 }
 
 .production-process__icon-play {
@@ -174,9 +183,10 @@
   }
 
   .production-process__img {
-    width: 682px;
+    //width: 682px;
     order: 1;
     margin: 0;
+    object-fit: fill;
   }
 
   .production-process__content {

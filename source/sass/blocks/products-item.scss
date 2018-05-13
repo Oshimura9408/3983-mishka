@@ -5,12 +5,23 @@
   //margin: 0 auto;
   width: 260px;
   margin: 0 auto;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: auto 7px;
-  padding-bottom: 55px;
-  z-index: 200;
+  //background-image: url("../img/bg-zigzag-line.svg");
+  //background-position: bottom;
+  //background-repeat: repeat-x;
+  //background-size: auto 7px;
+  //padding-bottom: 55px;
+  //z-index: 200;
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 7px;
+    padding-bottom: 55px;
+    z-index: 200;
+  }
 }
 
 .products-item__title {
@@ -113,12 +124,24 @@
     width: 668px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: auto 17px;
-    padding-bottom: 62px;
-    z-index: 200;
+    //background-image: url("../img/bg-zigzag-line.svg");
+    //background-position: bottom;
+    //background-repeat: repeat-x;
+    //background-size: auto 17px;
+    //padding-bottom: 62px;
+    //z-index: 200;
+
+    &::after {
+      width: 668px;
+      display: block;
+      content: "";
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: auto 12px;
+      padding-bottom: 60px;
+      z-index: 200;
+    }
   }
 
   .products-item__title {
@@ -213,7 +236,24 @@
 
   .products-item {
     width: 1050px;
-    padding-bottom: 85px;
+    //padding-bottom: 85px;
+    padding-bottom: 26px;
+    position: relative;
+
+    &::after {
+      width: 1050px;
+      //position: absolute;
+      position: relative;
+      display: block;
+      content: "";
+      //bottom: 165px;
+      bottom: 140px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: auto 17px;
+      z-index: 200;
+    }
   }
 
   .products-item__title {
@@ -261,6 +301,7 @@
 
   .products-item__buy {
     margin-left: 175px;
+    margin-top: -292px;
   }
 
   .products-item__table {
