@@ -172,13 +172,17 @@
   }
 
   .catalog-items__img {
-    width: 334px;
-    min-height: 334px;
+    //width: 334px;
+    //min-height: 334px;
+    width: 100%;
   }
 
   .catalog__img-wrapper {
-    width: calc(50%);
-    min-height: 334px;
+    //width: calc(50%);
+    //min-height: 334px;
+    width: 50%;
+    height: 100%;
+    margin-bottom: -6px;
   }
 
   .catalog-items__description {
@@ -210,12 +214,16 @@
   }
 
   .catalog-items__img {
-    width: 316px;
-    min-height: 462px;
+    //width: 316px;
+    //min-height: 462px;
+    //object-fit: fill;
+    object-fit: fill;
   }
 
   .catalog__img-wrapper {
-    width: calc(100%);
+    //width: calc(100%);
+    //min-height: 462px;
+    width: 100%;
     min-height: 462px;
   }
 
