@@ -175,6 +175,8 @@
     //width: 334px;
     //min-height: 334px;
     width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 
   .catalog__img-wrapper {
@@ -217,6 +219,8 @@
     //width: 316px;
     //min-height: 462px;
     //object-fit: fill;
+    width: 100%;
+    height: 100%;
     object-fit: fill;
   }
 
