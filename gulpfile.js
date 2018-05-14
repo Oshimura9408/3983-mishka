@@ -13,6 +13,7 @@ var minjs = require("gulp-uglify");
 var minhtml = require("gulp-htmlmin");
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
+var webp = require("gulp-webp");
 var run = require("run-sequence");
 var del = require("del");
 
